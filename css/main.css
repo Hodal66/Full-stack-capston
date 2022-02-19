@@ -1,0 +1,303 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+   
+               
+
+}
+header h1,p{
+    color:white;
+}
+header h1 span{
+    color:blue;
+}
+
+.headerhead{
+    border:1px solid rgb(151, 151, 104);
+    text-align: center;
+    text-transform: uppercase;
+    border-right: none;
+    border-left: none;
+    margin: 1em 0px;
+    padding: 1em;
+}
+header nav{
+    display: flex;
+    padding: 2em;
+    background-color: #C6971E;
+}
+header nav ul{
+    display: flex;
+    margin-left: 10%;
+}
+header nav ul li{
+    margin-left: 25%;
+    list-style-type: none;
+}
+header nav ul li a{
+    color : white;
+    font-size: 20px;
+    text-decoration: none;
+}
+button{
+    padding: 0.5em 2em;
+    border-radius: 50px;
+    border: 1px solid white;
+}
+header nav .login{
+    margin-left: 40%;
+    padding: 0em 2em;
+    border-radius: 50px;
+    border: 1px solid white;
+}
+header nav .login:hover{
+    background-color:steelblue;
+}
+header nav .login a{
+    text-decoration: none;
+}
+header nav .login a:hover{
+    color:white;
+}
+header nav ul li a:hover{
+    color: blue;
+}
+header .profile{
+    background: url("../image/bbbback.png");
+    display: flex;
+    padding: 4em 8em;
+    border-radius: 10px 10px 400px 40px;
+}
+
+header .profile img{
+    width: 120px;
+    height: 120px;
+    border-radius: 20px;
+    
+}
+header .content{
+    margin-left: 9em;
+}
+/*THIS IS NOW A SECTION ********************************************/
+
+section .about {
+    display: flex;
+}
+section .about img{
+    width: 650px;
+    height : 500px;
+    padding: 1em;
+    margin-left:1em ;
+}
+
+section .about .content{
+    margin: 1em 2em 1em 3em;
+    color: white;
+    background-color: #403E3E;
+    border-radius: 40px;
+    width: 650px;
+    height: 470px;
+   
+}
+section .about .content h1{
+    text-align: center;
+    padding:2em;
+    font-size: 24px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif; ;
+}
+section .about .content p{
+    padding: 2em;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+section .about .content .about_btn{
+    width: 156px;
+    height: 75;
+    margin-left: 35%;
+
+}
+
+/* about services *********************************************************888*/
+
+section .services{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+section .services img{
+    width: 350px;
+    height: 450px;
+}
+section .services .service{
+    display: block;
+    margin: 1em 2em;
+    color: black;
+}
+section .services .service p{
+    color: black;
+}
+section .services .service h1{
+    padding: 1em 0em;
+}
+section .services .service .offer{
+    background-color: #403E3E;
+    width: 50%;
+    margin: 0.5em 0em;
+    padding: 0.5em;
+    color:#C6971E;
+}
+section .services .service button{
+    width: 50%;
+    background-color: black;
+    color : white;
+}
+
+/* Let Now Move On Skills************************************************************* */
+
+section .skills{
+    margin-left: 1em;
+    display: grid;
+    grid-gap: 2px;
+    grid-template-columns: auto auto auto auto;
+}
+section .skills div{
+    border: 1px solid rgba(0, 0, 0,5%);
+    margin: 1em 2em;
+    width: 200px;
+    height: 300px;
+    border-radius: 40px;
+    padding: 0.5em;
+    box-shadow: 4px 4px 40px 5px ;
+}
+
+section .skills div h1{
+    font-size: 24px;
+    border: 10px solid #C6971E;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    margin: 0px 10%;
+    padding-top: 1em;
+    
+
+}
+section .skills div p{
+    color: black;
+    font-size: 20px;
+    padding:1em;
+
+}
+section .skills div span{
+    color:#C6971E;
+    text-align: center;
+    padding: 2em;
+    font-size: 24px;
+    font-weight: 7000;
+}
+
+/* THIS PART IS FOR Contact **************** */
+
+section .contact{
+display: flex;
+padding: 2em;
+background-color:#927E91;
+border-radius: 20px;
+margin: 3em 6em 3em 5em;
+}
+section .address{
+    border-radius: 20px;
+    padding-top: 0em;
+    background: url("../image/contact.png");
+    background-size: contain;
+    margin: 0em 0em 0.5em 0em;
+}
+section .address .first{
+    border-radius: 1em 1em 0em 0em;
+}
+section .address .last{
+    border-radius: 0em 0em 1em 1em;
+}
+
+section .address div{
+   
+    padding: 2.5em;
+    width: 550px;
+    border: 6px solid #C6971E;
+}
+section .address div p,a{
+    font-size: 36px;
+    color: white;
+}
+
+section aside{
+    margin-left: 5em;
+}
+
+section aside input[type="text"], input[type="email"]{
+    padding: 2em;
+    border-radius: 20px;
+    width:420px;
+    margin: 1em;
+    border-color: white;
+}
+
+section aside input[type="submit"]{
+    background-color: #636060;
+    color: white;
+    padding: 20px;
+    font-size: 24px;
+    width: 420px;
+    margin:2em 1em;
+    border-radius: 20px;
+   
+}
+section aside textarea{
+    margin-left: 1em;
+    border-radius: 20px;
+    margin-top: 1em;
+}
+section aside ::placeholder{
+    color: #927E91;
+}
+/* This is now Footer.....***************** */
+
+footer{
+    background-color: #636060;
+    padding: 6em;
+    color: white;
+    border-radius: 200px 0px 0px 0px;
+}
+footer nav{
+    display: flex;
+
+}
+footer nav ul{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-left: 6em;
+}
+footer nav ul li{
+    margin-left: 10em;
+    list-style-type: none;
+}
+footer nav h1 a{
+    font-size: 40px;
+}
+
+footer .social{
+    display: flex;
+    margin-left: 6em;
+    padding: 4em;
+}
+footer a{
+    font-size: 20px;
+}
+footer .social div{
+    margin-left: 2em;
+}
+footer .copy{
+    text-align: center;
+}
