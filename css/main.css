@@ -30,10 +30,10 @@ header nav{
 }
 header nav ul{
     display: flex;
-    margin-left: 10%;
+    margin-left: 6%;
 }
 header nav ul li{
-    margin-left: 25%;
+    margin-left: 18%;
     list-style-type: none;
 }
 header nav ul li a{
@@ -315,8 +315,15 @@ footer .social{
     padding: 4em;
 }
 footer a{
+    text-decoration: none;
+    color: #fff;
     font-size: 20px;
 }
+footer a:hover{
+    color:#C6971E;
+    background-color: #403E3E;
+}
+
 footer .social div{
     margin-left: 2em;
 }
