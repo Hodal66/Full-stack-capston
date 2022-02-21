@@ -3,17 +3,15 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-header{
-   
-               
-
+html, body{
+    scroll-behavior: smooth;
 }
+
 header h1,p{
     color:white;
 }
 header h1 span{
-    color:blue;
+    color:steelblue;
 }
 
 .headerhead{
@@ -44,11 +42,28 @@ header nav ul li a{
     text-decoration: none;
 }
 button{
+    background-color: #403E3E;
+    color: #fff;
     padding: 0.5em 2em;
     border-radius: 50px;
     border: 1px solid white;
 }
+button:hover{
+    color: #403E3E;
+    background-color: #fff;
+}
+ .get_started{
+    margin-top: 3em;
+}
+.get_started a{
+    text-decoration: none;
+}
+.get_started a:hover{
+    color: #403E3E;
+}
 header nav .login{
+    background-color: #403E3E;
+    color: white;
     margin-left: 40%;
     padding: 0em 2em;
     border-radius: 50px;
@@ -64,26 +79,30 @@ header nav .login a:hover{
     color:white;
 }
 header nav ul li a:hover{
-    color: blue;
+    color: steelblue;
 }
 header .profile{
-    background: url("../image/bbbback.png");
+    background: url("../image/prooofile.png");
     display: flex;
-    padding: 4em 8em;
-    border-radius: 10px 10px 400px 40px;
+    padding: 18em;
+    border-radius: 0px 0px 300px 10px;
+ 
 }
 
 header .profile img{
-    width: 120px;
-    height: 120px;
+    width: 200px;
+    height: 200px;
     border-radius: 20px;
     
 }
 header .content{
-    margin-left: 9em;
+    margin-left: 1em;
 }
 /*THIS IS NOW A SECTION ********************************************/
-
+/* .empty{
+    background-color: #403E3E;
+    padding: 20%;
+} */
 section .about {
     display: flex;
 }
@@ -118,6 +137,9 @@ section .about .content .about_btn{
     width: 156px;
     height: 75;
     margin-left: 35%;
+    background-color: #403E3E;
+    color: white;
+    font-size: 20px;
 
 }
 

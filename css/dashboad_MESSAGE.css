@@ -1,0 +1,113 @@
+*{
+    margin: 0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:#927E91;
+    display: flex;
+}
+html, body{
+    scroll-behavior: smooth;
+
+}
+
+header{
+    background: url("../image/prooofile.png");
+    width: 300px;
+    height: 700px;
+    background-size:contain;
+    background-size: cover;
+    text-align: center;
+    position: absolute;
+}
+
+header h1,p{
+    padding-top: 2em;
+    text-align: center;
+    color:white;
+}
+header h1 span{
+    color:steelblue;
+}
+header h2{
+    color: white;
+    padding-top: 1em;
+    padding-bottom: 1em;
+
+}
+
+header .menu{
+    margin-top: 2em;
+}
+
+header ul li{
+    background-color: #534F4F;
+    border: 1px solid #676764;
+    padding: 1em;
+    list-style: none;
+    color: white;
+}
+header ul li:hover,a:hover{
+    background-color: #C4C4C4;
+    color:rgba(0,0,0,0.8);
+}
+.article:hover{
+    background-color:#927E91;
+    color:white;
+}
+ .articles {
+    display: none;
+   
+}
+header ul li:hover .articles{
+    display: block;
+    position: absolute;
+    margin-left: 5em;
+    margin-top: 1em;
+    width: 200px;
+    
+}
+
+header ul li a{
+    text-decoration: none;
+    color: white;
+}
+#message{
+    background-color: #C4C4C4;
+    color: #534F4F;
+}
+#message:hover{
+    background-color: #534F4F;
+    color: #C4C4C4;
+}
+/* Thisis aside******************** */
+
+aside{
+    background-color: gray;
+    margin: 0em 0em 0em 18em;
+    width: 1000px;
+    border-radius: 40px;
+    padding:1em;
+}
+
+aside .container{
+    border-bottom: 2px solid black;
+    display: grid;
+    grid-template-columns: 25% 35% 35% 5%;
+}
+aside div{
+   background-color:#534F4F;
+   border-radius: 10px;
+   padding-bottom: 1em;
+ 
+
+}
+aside .bold{
+    font-size: 20px;
+    font-weight: 700;
+}
+aside.space{
+    
+}
