@@ -8,14 +8,14 @@
     <link rel="stylesheet" href="../css/legister.css">
 </head>
 <body>
-    <form action="£">
+    <div class="form">
             <div class="login_section">
                 <div class="user"><button><a href="user_login.html">Login</a></button></div>
                 <div class="legister"><button><a href="legister.html">Legister</a></button></div>
 
             </div>
             <div class="name">
-                <input type="text" name="text" id="tex" placeholder="Full Name">
+                <input type="text" name="full_Name" id="fullName" placeholder="Full Name" required autofocus>
             </div>
             <div class="Email">
                 <input type="email" name="email" id="email" placeholder="Enter Email">
@@ -26,11 +26,17 @@
             </div>
            
             <div class="submit">
-                <input type="submit" value="Login">
+                <button type="button" onclick="loginUser()" class="button w-full bg-blue text-white font-20">Login</button>
             </div>
             <div class="back">
                 <button><a href="index.html">Back</a></button>
             </div>
-    </form>
+        </div>
+            <script type="module" src="https://www.gstatic.com/firebasejs/9.6.7/firebase-app.js"></script>
+            <script type="module" src="https://www.gstatic.com/firebasejs/9.6.7/firebase-auth.js"></script>
+            <script type="module" src="https://www.gstatic.com/firebasejs/9.6.7/firebase-firestore.js"></script>
+    <script src="../css/firebase.js"></script>
+    <script src="../css/main.js"></script>
+
 </body>
 </html>
