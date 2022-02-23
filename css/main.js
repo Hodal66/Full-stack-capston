@@ -5,7 +5,7 @@ function addUser(){
     const password = document.getElementById('password').value;
     const fullName = document.getElementById('fullName').value;
     
-    auth.createUserWithEmailAndPassword(email, password)
+    firebase.auth().createUserWithEmailAndPassword(email, password)
     .then((userCredential) => {
       const user = userCredential.user;
       // alert("User created successfully")
