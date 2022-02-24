@@ -1,3 +1,5 @@
+
+
 *{
     margin: 0;
     padding: 0;
@@ -9,29 +11,29 @@ body{
     background-color: gray;
     align-items: center;
 }
-body form{
+body .form{
     margin: 5% 35%;
     width: 400px;
     height: 600px;
     background-color:#fff;
     border-radius: 20px;
 }
-body form .login_section{
+body .form .login_section{
     
     display: flex;
     color: #fff;
 }
-body form .login_section div{
+body .form .login_section div{
     padding: 20px;
 
 }
 
-body form .login_section div a{
+body .form .login_section div a{
     text-decoration: none;
     font-size: 20px;
 }
 
-body form .login_section .legister{
+body .form .login_section .legister{
     background-color: #636060;
     border-radius: 0px 20px 0px 0px;
     text-align: center;
@@ -40,7 +42,7 @@ body form .login_section .legister{
    
 }
 
-body form .login_section .user{
+body .form .login_section .user{
     background-color: #E5E5E5;
     width: 50%;
     padding: 3em;
@@ -55,10 +57,10 @@ body form .login_section .user{
 }
 
 /* This is about Input Text **********/
-form .Email input[type="email"]{
+.form .Email input[type="email"]{
     margin-top: 2%;
 }
-form .Email input[type="email"],.password input[type="password"]{
+.form .Email input[type="email"],.password input[type="password"]{
     background-color: #C4C4C4;
     padding: 1em;
     margin: 2% 5%;
@@ -69,16 +71,16 @@ form .Email input[type="email"],.password input[type="password"]{
     border: none;
 
 }
-form p a{
+.form p a{
     text-decoration: none;
     margin: 1% 5% 0% 5%;
    
 }
 
-form .submit {
+.form .submit {
     padding-top: 5em;
 }
-form .submit input[type="submit"],.back button{
+.form .submit button .back button{
     background-color: #000;
     padding: 0.5em;
     margin: 2% 5% ;

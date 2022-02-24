@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>User_login</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="../image/looogo.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../css/User_login.css">
 </head>
 <body>
-    <form action="£">
+   <div class="form">
             <div class="login_section">
                 <div class="user"><a href="user_login.html">Login</a></div>
                 <div class="legister"><a href="legister.html">Legister</a></div>
@@ -26,11 +30,18 @@
             <p><a href="forgot.html">Forgot password?</a></p>
 
             <div class="submit">
-                <input type="submit" value="Login">
+                <button type="button" onclick="addUser()" class="button w-full bg-blue text-white font-20">Login 
             </div>
             <div class="back">
-                <button><a href="index.html">Back</a></button>
+                <button><a href="index.html">Back <i class="fa fa-arrow-circle-left" style="font-size:36px"></i> 
+                    </i></a></button>
             </div>
-    </form>
+        </div>
+    <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-firestore.js"></script>
+    <script src="./scripts/firebase.js"></script>
+    <script src="./scripts/auth.js"></script>
 </body>
+
 </html>

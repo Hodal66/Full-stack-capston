@@ -2,10 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>User_login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <link rel="icon" type="image/png" sizes="32x32" href="../image/looogo.jpg">
     <link rel="stylesheet" href="../css/legister.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <l ink href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
     <div class="form">
@@ -16,27 +22,32 @@
             </div>
             <div class="name">
                 <input type="text" name="full_Name" id="fullName" placeholder="Full Name" required autofocus>
+               
             </div>
+
             <div class="Email">
+               
                 <input type="email" name="email" id="email" placeholder="Enter Email">
+                
             </div>
             <div class="password">
-               
+          
                 <input type="password" name="password" id="password" placeholder="****************">
+               
             </div>
            
             <div class="submit">
-                <button type="button" onclick="loginUser()" class="button w-full bg-blue text-white font-20">Login</button>
+                <button type="button" onclick="addUser()" class="button w-full bg-blue text-white font-20">Legister 
+                    <button><a href="index.html">Back <i class="fa fa-arrow-circle-left" style="font-size:36px"></i> 
+                    </button>
             </div>
-            <div class="back">
-                <button><a href="index.html">Back</a></button>
-            </div>
+            
         </div>
-            <script type="module" src="https://www.gstatic.com/firebasejs/9.6.7/firebase-app.js"></script>
-            <script type="module" src="https://www.gstatic.com/firebasejs/9.6.7/firebase-auth.js"></script>
-            <script type="module" src="https://www.gstatic.com/firebasejs/9.6.7/firebase-firestore.js"></script>
-    <script src="../css/firebase.js"></script>
-    <script src="../css/main.js"></script>
-
-</body>
-</html>
+        <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-firestore.js"></script>
+        <script src="./scripts/firebase.js"></script>
+        <script src="./scripts/auth.js"></script>
+    </body>
+    
+    </html>
