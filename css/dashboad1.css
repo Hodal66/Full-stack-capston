@@ -80,8 +80,8 @@ header ul li a{
 
 aside{
     background-color: gray;
-    margin: 5em 0em 5em 25em;
-    width: 800px;
+    margin: 5em 2em 5em 25em;
+    width: 50%;
     border-radius: 40px;
     padding:5em;
 }
@@ -92,15 +92,15 @@ aside h1{
    font-size: xx-large;
 }
 aside .btn{
-    display: inline;
-    margin-left: 7em;
+    display:flex;
+   
    
 }
 aside button{
     width: 200px;
     background-color:#534F4F;
     color:white;
-    padding:2em;
+    padding:1em;
     border-radius: 40px;
    
 
@@ -112,5 +112,113 @@ aside button:hover{
 aside button a{
     text-decoration: none;
     color:white;
-    font-size: 20px;
+    font-size: 1.5em;
+}
+/*YYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY
+YYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY*/
+@media screen and (max-width: 375px) {
+    body{
+        width: 375px;
+    }
+    header{
+        background: url("../image/prooofile.png");
+        width: 300px;
+        height: 700px;
+        background-size:contain;
+        background-size: cover;
+        text-align: center;
+        position: absolute;
+    }
+    
+    header h1,p{
+        padding-top: 2em;
+        text-align: center;
+        color:white;
+    }
+    header h1 span{
+        color:steelblue;
+    }
+    header h2{
+        color: white;
+        padding-top: 1em;
+        padding-bottom: 1em;
+    
+    }
+    
+    header .menu{
+        margin-top: 2em;
+    }
+    
+    header ul li{
+        background-color: #534F4F;
+        border: 1px solid #676764;
+        padding: 1em;
+        list-style: none;
+        color: white;
+    }
+    header ul li:hover,a:hover{
+        background-color: #C4C4C4;
+        color:rgba(0,0,0,0.8);
+    }
+    .article:hover{
+        background-color:#927E91;
+        color:white;
+    }
+     .articles {
+        display: none;
+       
+    }
+    header ul li:hover .articles{
+        display: block;
+        position: absolute;
+        margin-left: 5em;
+        margin-top: 1em;
+        width: 200px;
+        
+    }
+    
+    header ul li a{
+        text-decoration: none;
+        color: white;
+    }
+    
+    
+    
+    
+    aside{
+        background-color: gray;
+        margin: 2em 3em 5em 19em;
+        width: 50%;
+        border-radius: 40px;
+        padding:2em;
+    }
+    aside h1{
+        text-align: center;
+       top: 50%;
+       padding:3em 0em;
+       font-size:large;
+    }
+    aside .btn{
+        display: block;
+        
+       
+    }
+    aside button{
+        width: 150px;
+        background-color:#534F4F;
+        color:white;
+        padding:1em;
+        border-radius: 20px;
+       
+    
+    }
+    aside button:hover{
+        background-color: #C4C4C4;
+        color:rgba(0,0,0,0.8);
+    }
+    aside button a{
+        text-decoration: none;
+        color:white;
+        font-size: 1em;
+    }
 }

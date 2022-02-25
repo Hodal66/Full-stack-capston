@@ -3,15 +3,16 @@
  @role register user
 */
 function addUser(){
+    const FullName = document.getElementById('FullName').value;
     const email = document.getElementById('email').value;
     const password = document.getElementById('password').value;
     
     auth.createUserWithEmailAndPassword(email, password)
       .then((userCredential) => {
         const user = userCredential.user;
-         alert("User created successfully")
-        saveUserProfile({ email, password})
-         window.location.href = "../dashboard.html";
+         //alert("User created successfully")
+        saveUserProfile({email, FullName})
+       window.location.href = "./dashboard.html";
       })
       .catch((error) => {
         const errorCode = error.code;
@@ -22,13 +23,13 @@ function addUser(){
 /*
  @role register user
 */
-function addUser(){
+function loginUser(){
     const email = document.getElementById('email').value;
     const password = document.getElementById('password').value;
     auth.signInWithEmailAndPassword(email,password).then(userCredential => {
         const user = userCredential.user;
         localStorage.setItem('user',JSON.stringify(user))
-        window.location.href = "./onboard.html";
+        window.location.href = "./dashboard.html";
     })
     .catch(error => {
         const errorCode = error.code;
@@ -40,11 +41,10 @@ function addUser(){
 /*
  @role save user profile
 */
-function saveUserProfile({email, password}){
+function saveUserProfile({email, FullName}){
     db.collection('users').doc().set({
-
         email,
-        password,
+        FullName,
         created_at: new Date()
     }).then(()=>{
        alert("You successfully created account");
@@ -54,8 +54,5 @@ function saveUserProfile({email, password}){
     })
 }
 
-/*
- @role get profile
-*/
 
 
