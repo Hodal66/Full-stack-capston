@@ -19,4 +19,4 @@
   const auth = firebase.auth();
   // enable firebase firestore service
   const db  = firebase.firestore();
-//   db.settings({timeStampInShots: true});
+//   db.settings({timeStampInShots: true});g

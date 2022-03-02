@@ -3,11 +3,13 @@
 <head>
     <meta charset="UTF-8">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   
     <l ink href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" sizes="32x32" href="../image/looogo.jpg">
     <title>Home</title>
+    <!-- <link rel="stylesheet" href="../scss/main.scss"> -->
     <link rel="stylesheet" href="../css/main.css">
 </head>
 <body>
@@ -16,7 +18,7 @@
         <nav>
             <div>
                 <h1 id="Home">MHT<span>hodal</span></h1>
-                <label id="icon"><i class="fa fa-close">op</i></label>
+                <!-- <label id="icon"><i class="fa fa-close">op</i></label> -->
 
             </div>
            
@@ -27,18 +29,21 @@
                 <li><a href="#Skills">Skills</a></li>
                 <li><a href="#Contact">Contact</a></li>
                 <li><a href="blog.html">Blog</a></li>
+                <li><button class="btn login"><a href="user_login.html">Login</a></button></li>
             </ul>
-            <button class="login"><a href="user_login.html">Login</a></button>
+            
             
         </nav>
         <div class="profile">
-            <img src="../image/profile.png" width="200px" height="200px" alt="">
+            <div class="content">
+                <img src="../image/profile.png" width="200px" height="200px" alt="">
+            </div>
             <div class="content">
                 <h1>WELLCOME TO MUHETO hodal <br> FUll-stack Web developer</h1><br>
                 <p>I give you all things you want about design and all <br>
                    technical issue about networking.</p><br>
                 <p>Do you want any one to hire?</p>
-                <button class="get_started"><a href="blog.html">Get Started</a></button>
+                <button class="btn start"><a href="blog.html">Get Started</a></button>
             </div>            
         </div>
         <!-- <div class="empty">
@@ -51,19 +56,19 @@
     <section>
         <h1 class="headerhead" id="aboutD">About Me</h1>
         <div class="about" >
-            <div>
+            <div class="about__1">
                 <img src="../image/manager 1.png" width="500px" height="500px" alt="">
             </div>
-            <div class="content">
-                <h1>About Me</h1>
-                <p>My name is MUHETO Hodal I live in Kigali city
+            <div class="about__2">
+                <h1 class="center header_2">About Me</h1>
+                <p class="font-1">My name is MUHETO Hodal I live in Kigali city
                     I have A2 in MCE, I Love programming and is my habbit 
                     am web developer and network administrator. now am going to
                     finnish A1 in IT, which also include my career and now am 
                     fullstack web developer, I can design any website and includes all
                     backend necessary information.
                 </p>
-                <button class="about_btn"><a href="£">More..</a></button>
+                <button class="btn about_btn"><a href="£">More..</a></button>
             </div>
         </div>
 
@@ -76,12 +81,12 @@
             </div>
             <div>
                 <h1>Front-End  Design</h1>
-                <p>I Design an amazing international website which can compatate
+                <p class="font-2">I Design an amazing international website which can compatate
                     all over the word that why i can promisse not to miss this opportunity
                     of being with me, am here for you let do more with you!!
                 </p>
                 <p class="offer">I offer you 50%</p>
-                <button><a href="£"></a>InDetail</button>
+                <button class="btn"><a href="£"></a>For More...</button>
             </div>
 
         </div>
@@ -92,14 +97,14 @@
             </div>
             <div>
                 <h1>Backend  Design</h1>
-                <p>
+                <p class="font-2">
                     I make your desire be reality as needed in internal 
                     response, so all recordes can be seen by you as an administrator
                     and you can modifier in the easiest way, I try to make simple
                     for you.
                 </p>
                 <p class="offer">I offer you 50%</p>
-                <button><a href="£"></a>InDetail</button>
+                <button class="btn"><a href="£"></a>For More...</button>
             </div>
 
         </div>
@@ -110,13 +115,13 @@
             </div>
             <div>
                 <h1>network Issues</h1>
-                <p>
+                <p class="font-2">
                     I decided to give you all servises related to network Issues
                     such as creating home network, fixing wireless, now don't worry
-                    about any kind of vulnelability networks am here to make them end
+                    about any kind of vulnelability networks am here to make end
                 </p>
                 <p class="offer">I offer you 50%</p>
-                <button><a href="£"></a>InDetail</button>
+                <button class="btn"><a href="£"></a>For More...</button>
             </div>
         </div>
      </div>
@@ -190,25 +195,26 @@
 
     <div class="contact">
         <div class="address">
-            <div class="first"><p>TEL : + 0782439775</p></div>
-            <div class="a"><p><a href="£"> mhthodol@gmail.com</a></p></div>
-            <div class="phone_address"><p>Linkdin</p></div>
-            <div class="last "> <p> faceebook</p></div>
+            <div class="address__1"><p><i class="fa fa-phone" style="font-size:36px"></i>TEL : + 0782439775</p></div>
+            <div class="address__2"><p><a href="£">
+                <i class="fa fa-envelope" style="font-size:36px"></i>mhthodol@gmail.com</a></p></div>
+            <div class="address__3"><p><i class="fa fa-linkedin" style="font-size:36px"></i>Linkdin</p></div>
+            <div class="address__4"> <p><i class="fa fa-facebook" style="font-size:36px"></i> faceebook</p></div>
         </div>
 
         <aside>
-            <form action="£">
+            <form action="#" id="contactForm">
                 <div>
-                    <input type="text" name="text" id="text" placeholder="Enter Names">
+                    <input type="text" name="name" id="name" placeholder="Enter Names">
                 </div>
                 <div>
-                   <input type="email" name="email" id="email" placeholder="Enter Name">
+                   <input type="email" name="email" id="email" placeholder="Enter your email">
                 </div>
                 <div>
                     <textarea name="message" id="message" cols="55" rows="10" placeholder="Enter message here">
                     </textarea>
                 </div>
-                <input type="submit" value="Send" onclick="saveMessage()">
+                <input type="submit" value="Send" onclick="addMessage()">
 
             </form>
         </aside>
@@ -242,7 +248,7 @@
  <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-firestore.js"></script>
  <script src="./scripts/firebase.js"></script>
  <script src="./scripts/auth.js"></script>
-<script src="../script_jv/validation.js"></script>
+<script src="./scripts/index__.js"></script>
 
 </body>
 
