@@ -1,0 +1,21 @@
+$color1:#000;
+$color2:white;
+$color3:#C6971E;
+$color4:#927E91;
+$color5:#403E3E;
+$color7:#C4C4C4;
+$color8:#3239D0;
+
+$desktop : 1200px;
+$laptop : 992px;
+$tablet : 768px;
+$mobile : 576px;
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color:$color1;
+}

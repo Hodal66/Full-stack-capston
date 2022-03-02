@@ -114,3 +114,13 @@ aside .message_user{
     margin: 1em;
     border-radius: 5px 30px 30px 30px;
 }
+.fa{
+    font-size: 2em;
+    margin-right: 2em;
+    color: #C4C4C4;
+    background-color: #534F4F;
+}
+.fa:hover{
+    background-color: #534F4F;
+    color:#C6971E;
+}
