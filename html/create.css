@@ -14,7 +14,7 @@ html, body{
 }
 
 header{
-    background: url("../image/prooofile.png");
+    background: url("./prooofile.png");
     width: 300px;
     height: 700px;
     background-size:contain;
@@ -76,7 +76,7 @@ header ul li a{
 }
 #overview{
     background-color: #534F4F;
-    color: #C4C4C4;;
+    color: #C4C4C4;
 }
 #overview:hover{
     background-color: #C4C4C4;
@@ -95,16 +95,17 @@ header ul li a{
 aside{
     background-color: gray;
     margin: 0em 0em 0em 18em;
-    width: 1200px;
+    width: 1000px;
     border-radius: 40px;
-    padding:1em;
+    padding:0.3em 2em;
 }
 
 
 
 
 .title input{
-    padding: 2em;
+    padding: 0.5em;
+    font-size: 1em;
     border-radius: 40px;
     width: 500px;
     background-color: #C4C4C4;
@@ -115,25 +116,30 @@ aside{
     border-radius: 40px;
     width: 250px;
     height: 200px;
+    margin-top:-4em;
 }
 .add_article{
     display: flex;
+    flex-direction: column;
 }
-.add_article textarea{
-    border-radius: 40px;
+.add_article .textarea{
     background-color: #C4C4C4;
+    border-radius: 40px;
+    margin-top:-4.5em;
 
 }
 .container .left{
+    margin-top:0em;
    
     font-size: 20px;
     font-weight: 700;
+
 }
 .create_btn button{
-    background-color:#534F4F;
+    background-color:green;
     color: #C4C4C4;
     border-radius: 20px;
-    padding: 2em;
+    padding: 1em;
     width: 200px;
 }
 .create_btn button a{

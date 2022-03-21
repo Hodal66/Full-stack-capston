@@ -14,7 +14,7 @@ html, body{
 }
 
 header{
-    background: url("../image/prooofile.png");
+    background: url("./prooofile.png");
     width: 300px;
     height: 700px;
     background-size:contain;
@@ -87,7 +87,7 @@ header ul li a{
 aside{
     background-color: gray;
     margin: 0em 0em 0em 10em;
-    width: 1000px;
+    width: 600px;
     border-radius: 40px;
     padding:1em;
 }
@@ -95,7 +95,7 @@ aside{
 aside .container{
     border-bottom: 2px solid black;
     display: grid;
-    grid-template-columns: 25% 35% 35% 5%;
+    grid-template-columns: 25% 32.5% 32.5% 10%;
 }
 aside div{
    background-color:#534F4F;

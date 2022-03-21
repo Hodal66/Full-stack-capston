@@ -1,37 +1,40 @@
-hj::after{
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 
 }
+
+
 button{
     border:none;
+    
 }
 
 body{
     background-color: gray;
     align-items: center;
+    width: 100%;
 }
 body .form{
     margin: 5% 35%;
-    width: 400px;
-    height: 650px;
+    width: 30%;
     background-color:#fff;
-    border-radius: 20px;
+    border-radius: 1em;
+    padding-bottom: 2em;
 }
 body .form .login_section{
-    
     display: flex;
     color: #fff;
 }
 body .form .login_section div{
-    padding: 20px;
+    padding: 1em;
 
 }
 
 body .form .login_section div a{
     text-decoration: none;
-    font-size: 2em;
+    font-size: 1.5em;
     border: none;
 }
 body .form .login_section div a:hover{
@@ -39,17 +42,23 @@ body .form .login_section div a:hover{
 }
 body .form .login_section .legister{
     background-color: #e5e5e5;
-    border-radius: 0px 20px 0px 0px;
+    border-radius: 0px 1em 0px 0px;
     text-align: center;
     width: 50%;
-    padding: 3em;
+    padding: 1.5em;
 }
-
+body .form .login_section .user:hover a:hover{
+    color: white;
+    background-color: green;
+}
+body .form .login_section .user:hover{
+    background-color: green;
+}
 body .form .login_section .user{
-    background-color: #636060;;
+    background-color: #636060;
     width: 50%;
-    padding: 3em;
-    border-radius: 20px 0px 0px 0px;
+    padding: 1.5em;
+    border-radius: 1em 0px 0px 0px;
     text-align: center;
     
 }
@@ -59,14 +68,14 @@ body .form .login_section .user{
 
 /* This is about Input Text *******************/
 .password input[type="password"]{
-    margin-top: 2%;
+    margin-top: 1em;
 }
 .form .Email input[type="email"],.password input[type="password"],
 .name input[type="text"]{
     background-color: #C4C4C4;
-    padding: 1em;
+    padding: 0.5em;
     margin: 3% 2% 3% 0%;
-    width: 60%;
+    width: 80%;
     border-radius:10px;
     font-size: 20px;
     color: rgba(0,0,0,60%);
@@ -80,21 +89,21 @@ body .form .login_section .user{
 }
 
 
-.form .submit button{
-    background-color: #000;
-    padding: 0.5em;
-    margin: 2% 5% ;
+.form .submits button{
+    background-color:green;
+    padding: 0.8em;
+    margin: 2% 5% ; 
     width: 90%;
     border-radius:10px;
-    font-size: 24px;
+    font-size: 1em;
     color:#C4C4C4;
    
     border: none;  
     font-weight: 900;
 }
-.back button a{
+.form .submits button a{
+    color: #C4C4C4;
     text-decoration: none;
-    color:#C4C4C4;
 }
 .size_20{
     background-color: red;
@@ -120,13 +129,14 @@ body .form .login_section .user{
       margin-top:0.7em;
     margin-left:1em;
     padding: 0.5em;
-    font-size:5em;
-    
-
     min-width: 25px;
     text-align: center;
   }
-  
+  .arrow{
+      
+      font-size:24px;
+      margin-left: 2em;
+  }
   /* Style the input fields */
   .input-field {
     width: 100%;
