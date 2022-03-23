@@ -1,0 +1,67 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+
+    <link rel="stylesheet" href="./sign_up.css">
+    <link rel="icon" type="image/x-icon" href="./logo2.jpg">
+</head>
+
+<body>
+    <div class="signup_form">
+        <h1 class="title text-primary">Sign Up</h1>
+        <hr>
+        <h4>It's free and only takes a minute</h4>
+
+        <form id="signup-form">
+            <label for="Name">Full name</label>
+            <div class="ind">
+                <input type="text" id="name" placeholder="First & Last Name" minlength="3" maxlength="30"
+                    title="Name should be at least 3 letters" required>
+                <span class="Sindicator" id="nameValid"></span>
+            </div>
+
+            <label for="email">E-mail</label>
+            <div class="email ind">
+                <input type="email" name="email" id="email" placeholder="E-mail" required>
+                <span class="Sindicator" id="emailValid"></span>
+                <span id="E-innerText"></span>
+            </div>
+
+            <label for="password">Password</label>
+            <div class="ind">
+                <input type="password" id="password1" placeholder="password" required>
+                <span class="Sindicator pswdInd" id="password1Valid"></span>
+                <span id="pswd-innerText"></span>
+            </div>
+
+
+            <!-- <label for="password">Confirm Password</label>
+            <div class="ind">
+                <input type="password" id="password2" title="first password and second should match"
+                    placeholder="password" required>
+                <span class="Sindicator" id="password2Valid"></span>
+            </div> -->
+
+
+            <button type="submit" id="submit">Submit</button>
+
+        </form>
+        <p class="para-2">Already have an account? <a href="./login.html" class="login">Login here</a></p>
+    </div>
+    <p class="para-2"><a href="./blog.html" class="login back">
+            << home</a> </p> 
+
+                <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+                    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+                <script defer src="./init-firebase.js" type="module"></script>
+                <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+                <script defer src="../scripts/signupScript.js" type="module"></script>
+
+</body>
+
+</html>

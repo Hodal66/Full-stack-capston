@@ -29,7 +29,7 @@
                 <li><a href="#Skills">Skills</a></li>
                 <li><a href="#Contact">Contact</a></li>
                 <li><a href="blog.html">Blog</a></li>
-                <li><button class="btn login"><a href="user_login.html">Login</a></button></li>
+                <li><button class="btn login"><a href="login.html">Login</a></button></li>
             </ul>
             
             
@@ -190,17 +190,10 @@
 
     <h1 class="headerhead" id="Contact">Contact Me</h1>
 
-    <!-- <div class="contact">
-        <div class="address">
-            <div class="address__1"><p><i class="fa fa-phone" style="font-size:36px"></i>TEL : + 0782439775</p></div>
-            <div class="address__2"><p><a href="£">
-                <i class="fa fa-envelope" style="font-size:36px"></i>mhthodol@gmail.com</a></p></div>
-            <div class="address__3"><p><i class="fa fa-linkedin" style="font-size:36px"></i>Linkdin</p></div>
-            <div class="address__4"> <p><i class="fa fa-facebook" style="font-size:36px"></i> faceebook</p></div>
-        </div> -->
+
 
         <aside>
-            <form action="#" id="contactForm">
+            <form method="post" class="form"  id="contactForm">
                 <div>
                     <input type="text" name="name" id="name" placeholder="Enter Names" required >
                 </div>
@@ -211,7 +204,7 @@
                     <textarea name="message" id="message" cols="55" rows="10" value="Enter message here">
                     </textarea>
                 </div>
-                <input type="submit" value="Send" onclick="addMessage()">
+                <input type="submit" value="Send" ">
 
             </form>
         </aside>
@@ -240,12 +233,8 @@
      
     <p class="copy">MHThodal capston-project &copy; allright reserved</p>
  </footer>
- <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-app.js"></script>
- <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-auth.js"></script>
- <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-firestore.js"></script>
- <script src="./scripts/firebase.js"></script>
- <script src="./scripts/auth.js"></script>
-<script src="./scripts/index__.js"></script>
+ <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+ <script defer src="../scripts/queries.js"></script>
 
 </body>
 

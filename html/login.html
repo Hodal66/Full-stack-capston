@@ -1,0 +1,46 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATLP | Login</title>
+    <link rel="stylesheet" href="./sign_up.css">
+    <link rel="icon" type="image/x-icon" href="./img/logo2.jpg">
+</head>
+
+<body>
+    <div class="login-form">
+        <h1>Login</h1>
+        <form id="form">
+            <label for="email">Email</label>
+            <div class="email ind">
+                <input type="email" name="email" id="email" placeholder="Email" required>
+                <span class="indicator" id="emailValid"></span>
+            </div>
+            <label for="password">Password</label>
+            <div class="password ind">
+                <input type="password" name="password" id="password" placeholder="password"
+                    title="Password should be at least 3 chracter. 1 uppercase, 1 lowercase and number" required>
+                <span class="indicator" id="passwordValid"></span>
+            </div>
+            <button type="submit">Login</button>
+
+        </form>
+        <p class="para-2 log-para">Not have account? <a href="./signup.html">Sign Up Here</a></p>
+
+
+    </div>
+    <p class="para-2 "><a href="./blog.html" class="login back ">
+            << Back to home</a> </p> 
+
+
+                <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+                    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+                <script defer src="./init-firebase.js" type="module"></script>
+                <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+                <script defer src="../scripts/loginScript.js" type="module"></script>
+</body>
+
+</html>

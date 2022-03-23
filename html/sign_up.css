@@ -1,0 +1,299 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #888888;
+    font-family: 'Robot', sans-serif;
+}
+
+.signup_form {
+    width: 30%;
+    /* height: 550px; */
+    margin: auto;
+    background-color: rgb(142, 140, 140);
+    border-radius: 10px;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    border: 1px solid rgb(233, 227, 227);
+    box-shadow: 5px 7px 5px 0 #c5c3c3;
+}
+
+.login-form {
+    width: 30%;
+    height: 380px;
+    margin: 20px auto;
+    margin-top: 4rem !important;
+    background-color: white;
+    border-radius: 3px;
+    border: 1px solid rgb(233, 227, 227);
+    box-shadow: 5px 7px 5px 0 #c5c3c3;
+
+
+}
+
+h1 {
+    text-align: center;
+    padding: 15px;
+    font-family: "Lato";
+}
+
+h4 {
+    text-align: center;
+    font-size: .9rem;
+    color: rgb(53, 48, 48);
+    margin-top: 8px;
+}
+
+form {
+    width: 70%;
+    margin-left: 15%;
+}
+
+form label {
+    display: flex;
+    margin-top: 16px;
+    font-size: 18px;
+    padding: 0px 0px 10px 0px;
+    font-family: 'Lato';
+    font-weight: bolder;
+
+}
+
+form input {
+    width: 100%;
+    padding: 7px;
+    border: none;
+    border: 1px solid gray;
+    border-radius: 6px;
+    outline: none;
+    background-color: rgb(245, 245, 245);
+}
+
+form input::placeholder {
+    text-transform: capitalize;
+    font-family: "Lato";
+    color: rgb(17, 26, 28);
+    font-weight: bolder;
+}
+
+button {
+    width: 100%;
+    padding: 7px;
+    border-radius: 6px;
+    margin-top: 20px;
+    border: none;
+    background-color: rgb(214, 13, 13);
+    color: white;
+    font-size: 1.2rem;
+    cursor: not-allowed;
+}
+
+button:disabled {
+    cursor: not-allowed;
+    background-color: red;
+}
+
+button:enabled {
+    background-color: #1d2724;
+    cursor: pointer;
+}
+
+.ind {
+    position: relative;
+}
+
+.indicator {
+    position: absolute;
+    top: 40%;
+    right: 2%;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: rgb(214, 210, 210);
+}
+
+#signup-form .Sindicator {
+    position: absolute;
+    top: 25%;
+    right: 2%;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+
+#signup-form .pswdInd {
+    position: absolute;
+    top: 15% !important;
+}
+
+#signup-form .Sindicator.valid {
+
+    background-image: url(./valid.png);
+    background-size: cover;
+
+}
+
+#signup-form .Sindicator.invalid {
+    background-image: url(./blog6.png);
+    background-size: cover;
+}
+
+/* .indicator.valid {
+    background: #0f0;
+    box-shadow: 0 0 5px #0f0,
+        0 0 10px #0f0,
+        0 0 20px #0f0,
+        0 0 40px #0f0;
+
+}
+
+.indicator.invalid {
+    background: #f00;
+    box-shadow: 0 0 5px #f00,
+        0 0 10px #f00,
+        0 0 20px #f00,
+        0 0 40px #f00;
+
+} */
+
+p {
+    text-align: center;
+    padding-top: 20px;
+    font-size: .9rem;
+}
+
+.para-2 {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: .9rem;
+    margin-top: -10px;
+    font-family: 'Lato';
+
+}
+
+.para-2 a {
+    color: green;
+    border: none;
+    font-size: 1.1rem;
+}
+
+.log-para {
+    margin-top: 20px;
+    font-size: 1rem;
+    color: black;
+
+}
+
+.signup_form p {
+    font-family: 'Lato';
+    padding: 5px;
+    margin: 10px;
+}
+
+.signup_form a {
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+.login {
+    text-decoration: none;
+    padding: 7px 20px;
+    border: 1px solid grey;
+    background-color: transparent;
+    font-weight: bolder;
+    text-transform: uppercase;
+    transition: .3s;
+
+}
+
+/* .login:hover {
+    background-color: #c1d3ce
+} */
+
+.back {
+    text-transform: lowercase;
+}
+
+
+body {
+    padding-bottom: 2rem;
+}
+
+/* !!!!!!!!!!!!!!!!!!Media Query for sign-up!!!!!!!!!!!!!!!!!!!!! */
+
+@media screen and (max-width:1100px) and (min-width: 700px) {
+    .signup_form {
+        width: 40%;
+    }
+
+}
+
+@media screen and (max-width:699px) and (min-width: 580px) {
+    .signup_form {
+        width: 50%;
+    }
+
+}
+
+@media screen and (max-width:579px) and (min-width: 400px) {
+    .signup_form {
+        width: 60%;
+    }
+
+}
+
+@media screen and (max-width:399px) and (min-width: 290px) {
+    .signup_form {
+        width: 75%;
+    }
+
+}
+
+@media screen and (max-width:289px) and (min-width: 200px) {
+    .signup_form {
+        width: 88%;
+    }
+
+}
+
+
+/* !!!!!!!!!!!!!!!!!!Media Query for Login form!!!!!!!!!!!!!!!!!!!!! */
+
+
+@media screen and (max-width:1100px) and (min-width: 700px) {
+    .login-form {
+        width: 40%;
+    }
+
+}
+
+@media screen and (max-width:699px) and (min-width: 580px) {
+    .login-form {
+        width: 50%;
+    }
+
+}
+
+@media screen and (max-width:579px) and (min-width: 400px) {
+    .login-form {
+        width: 60%;
+    }
+
+}
+
+@media screen and (max-width:399px) and (min-width: 290px) {
+    .login-form {
+        width: 75%;
+    }
+
+}
+
+@media screen and (max-width:289px) and (min-width: 200px) {
+    .login-form {
+        width: 88%;
+    }
+
+}

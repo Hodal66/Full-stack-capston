@@ -110,10 +110,10 @@ header .content p1{
 .other_content p{
     font-size: 1.5em;
 }
-/*THIS IS NOW A SECTION ********************************************/
+/*THIS IS NOW A .container ********************************************/
 
 
-section {
+.container  {
     display: flex;
     border:2px solid #C6971E;
     padding: 1em;
@@ -121,13 +121,16 @@ section {
     border-radius: 20px;
     max-width: 100%;
 }
-
-section .content{
+#article{
+    display: flex;
+    flex-direction: column;
+}
+.container .content{
     margin-left: 2em;
     color:black;
 }
 
-section .content .sub_title{
+.container .content .sub_title{
    
     font-size: 1.5em;
     margin-top: 2em;
@@ -151,7 +154,7 @@ section .content .sub_title{
     margin-right: 1em;
     font-size: 1em;
 } 
-section .image img{
+.container .image img{
      max-width: 700px;
      max-height: 500px;
 }
@@ -253,10 +256,10 @@ header .content p, h1{
 .other_content p{
     font-size: 1.2em;
 }
-/*THIS IS NOW A SECTION ********************************************/
+/*THIS IS NOW A .container ********************************************/
 
 
-section {
+.container {
     display: block;
     border:2px solid #C6971E;
     padding: 0.5em;
@@ -265,12 +268,12 @@ section {
     max-width: 1200px;
 }
 
-section .content{
+.container .content{
     margin-left: 1em;
     color:black;
 }
 
-section .content .sub_title{
+.container .content .sub_title{
    
     font-size: 1em;
     margin-top: 1em;
@@ -295,7 +298,7 @@ section .content .sub_title{
     font-size: 1em;
     margin-right:0.5em;
 } 
-section .image img{
+.container .image img{
      max-width: 20em;
      max-height: 18em;
      margin-left:1em;
@@ -478,10 +481,10 @@ header .content p, h1{
 .other_content p{
     font-size: 1.2em;
 }
-/*THIS IS NOW A SECTION ********************************************/
+/*THIS IS NOW A .container ********************************************/
 
 /* 
-section {
+.container {
     display: flex;
     border:2px solid #C6971E;
     padding: 0.5em;
@@ -490,12 +493,12 @@ section {
     max-width: 1200px;
 }
 
-section .content{
+.container .content{
     margin-left: 2em;
     color:black;
 }
 
-section .content .sub_title{
+.container .content .sub_title{
    
     font-size: 1.2em;
     margin-top: 1em;
@@ -520,7 +523,7 @@ section .content .sub_title{
     font-size: 0.7em;
     margin-right:0.2em;
 } 
-section .image img{
+.container .image img{
      max-width: 17em;
      max-height: 21em;
      margin-left:0.5em;

@@ -89,7 +89,7 @@ body .form .login_section .user{
 }
 
 
-.form .submits button{
+.form .submits button, .submitt{
     background-color:green;
     padding: 0.8em;
     margin: 2% 5% ; 
@@ -104,6 +104,9 @@ body .form .login_section .user{
 .form .submits button a{
     color: #C4C4C4;
     text-decoration: none;
+}
+#submit{
+    cursor: pointer;
 }
 .size_20{
     background-color: red;
@@ -135,7 +138,7 @@ body .form .login_section .user{
   .arrow{
       
       font-size:24px;
-      margin-left: 2em;
+      margin-left: 0.5em;
   }
   /* Style the input fields */
   .input-field {

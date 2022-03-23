@@ -1,0 +1,872 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+:root {
+    --heading-font: font-family: 'Outfit', sans-serif;
+    --sub-head-font: font-family: 'Lato', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    background-color: white;
+    color: rgb(32, 30, 30);
+    font-family: 'Robot', Arial, Helvetica, sans-serif;
+    font-size: 1.1rem;
+    font-weight: 400;
+    overflow-x: hidden;
+    margin: 0px;
+    padding: 0px;
+    scroll-behavior: smooth;
+
+}
+
+.text-primary {
+    font-family: var(--heading-font);
+    color: blue;
+}
+
+b {
+    font-weight: bolder;
+}
+
+main {
+    overflow: hidden;
+    width: 100%;
+    margin: 0;
+
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Nav-Bar */
+header {
+    width: 100%;
+    height: 14vh;
+    background-color: rgb(255, 255, 255);
+    /* background-color: rgb(66, 65, 65); */
+    padding-top: 15px;
+    position: fixed;
+
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: relative;
+    padding: 0 3rem;
+}
+
+nav .logo {
+    object-fit: scale-down;
+    height: 100%;
+
+
+}
+
+nav .logo img {
+    height: 50px;
+    border-radius: 50%;
+}
+
+nav ul {
+    display: flex;
+    padding-right: 2rem;
+
+}
+
+nav ul li {
+    padding: .5rem 1rem;
+    height: 100%;
+    justify-content: center;
+    text-align: center;
+    /* background-color: #444; */
+
+}
+
+.nav-items .nav-item a {
+    color: rgb(17, 16, 16);
+    font-size: .9rem;
+}
+
+.nav-items .nav-item a:link,
+.nav-items .nav-item a:visited {
+    text-decoration: none;
+    text-transform: uppercase;
+    border-bottom: 2px solid transparent;
+    -webkit-transition: border-bottom 0.2s;
+    transition: border-bottom 0.3s;
+}
+
+
+.nav-items .nav-item a:hover {
+    border-bottom: 2px solid #1e84ac;
+    transition: .3s;
+}
+
+nav .menu-toggle {
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    padding: .5rem 1rem;
+    font-size: 1.2rem;
+
+}
+
+.mobile {
+    display: none;
+}
+
+main .site-head {
+    height: 110vh;
+    text-align: center;
+    padding: 4rem 2rem;
+    margin: 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/background_img.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.site-head h1 {
+    color: white;
+    font-family: var(--heading-font);
+    font-weight: 500;
+    padding: 2rem 2rem;
+    font-size: 3rem;
+}
+
+.site-head h1 strong {
+    color: #1f789b;
+}
+
+.site-head h3 {
+    font-family: var(--sub-head-font);
+    font-weight: 400;
+    color: rgb(218, 200, 200);
+    padding: 1rem 6rem;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.site-head a {
+    padding: .9rem 1.8rem;
+    border-radius: 5px;
+    background-color: #1A5F7A;
+    color: rgb(248, 244, 244);
+    font-weight: 300;
+    margin-top: 2rem;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    transition: 0.4s;
+}
+
+.site-head a:hover {
+    background-color: #0b3e52;
+    color: white;
+
+}
+
+
+
+/* !!!!!!!!!!!!!!!!!!PORTFOLIO PART!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+
+#Portfolio {
+    background-image: #FFFCDC;
+    background-image: radial-gradient(#fffef6 20%, #fffef4 15%, #f9f2fa 60%);
+    width: 100%;
+    padding: 7% 0;
+    margin-top: 140px;
+
+}
+
+.big-text h1 {
+    text-align: center;
+
+}
+
+.big-text h1::after {
+    display: block;
+    height: 1.5px;
+    background-color: #1d88b3;
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 15px;
+
+}
+
+#Portfolio .cards {
+    /* background-color: yellow; */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 10% 0;
+
+}
+
+.cards .card {
+    position: relative;
+    overflow: hidden;
+}
+
+.cards .card img {
+    filter: brightness(55%);
+    width: 22rem;
+    height: 250px;
+    margin: 0 .9rem;
+    opacity: 0.9;
+    border: .8px solid rgb(190, 185, 185);
+    box-shadow: 3px 5px 4px rgb(241, 239, 239);
+    transition: all 0.3s ease-out;
+}
+
+.cards .card img:hover {
+    filter: brightness(20%);
+}
+
+.description {
+    color: #fff;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.description h3 {
+    font-weight: 500;
+    margin: 0 0 13px;
+    transform: translateY(30px);
+    opacity: 0;
+    transition: all .3s ease-out;
+}
+
+.description a {
+    color: #fff;
+    background-color: rgb(0, 140, 255);
+    padding: 8px 22px;
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 3px;
+    transition: all .3s ease-out .3s;
+    transform: translateY(30px);
+    opacity: 0;
+}
+
+
+
+
+.description a:hover {
+    background-color: rgb(5, 101, 180);
+}
+
+.card:hover .description h3 {
+    opacity: 1;
+    transform: translateY(-30px);
+
+}
+
+.card:hover .description a {
+    opacity: 1;
+    transform: translateY(-30px);
+
+}
+
+
+
+
+
+
+/*!!!!!!!!!!!!!!!!!!!!!!1 ABOUT !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+
+
+
+
+#about {
+
+    width: 100%;
+    height: 100vh;
+    padding: 3rem;
+    text-align: center;
+    justify-content: center;
+
+}
+
+#about .main-about {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding-top: 2rem;
+    gap: 1rem;
+    justify-content: center;
+
+}
+
+
+#about .main-about img {
+    height: 180px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    margin-top: 4rem;
+
+}
+
+.main-about h4 {
+    margin: 1rem auto;
+    line-height: 1.3;
+}
+
+.main-about .myprofile h3 {
+    font-size: 1.7rem;
+    font-family: var(--heading-font);
+    font-weight: bolder;
+    color: rgb(26, 29, 29);
+}
+
+.myprofile h4 a {
+    color: #1A5F7A;
+}
+
+.myskills {
+    text-align: left;
+    display: block;
+    margin: auto;
+}
+
+.main-about .myskills h3 {
+    margin: 5px 0px;
+    border-radius: 5px 10px;
+    background-color: #1A5F7A;
+    padding: 10px 20px;
+    text-align: left;
+    text-transform: capitalize;
+
+}
+
+
+
+
+/* !!!!!!!!!!!!!!!!Contact section!!!!!!!!!!!!!!!! */
+
+
+
+#contact_us {
+    display: flex;
+    gap: 4rem;
+    padding: 2rem 3rem;
+    height: fit-content;
+
+}
+
+#contact_us .mytext {
+    padding: 2rem;
+    background-image: linear-gradient(to bottom right, #1A5F7A, #31a6d4, #186888);
+    color: white;
+
+}
+
+.mytext h1 {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.mytext h3 {
+    font-size: 1.1rem;
+    padding-top: 2rem;
+}
+
+form {
+
+    padding: 1rem 2rem;
+    width: 85%;
+}
+
+.ind {
+    position: relative;
+}
+
+.indicator {
+    position: absolute;
+    top: 40%;
+    right: 1%;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: rgb(240, 235, 235);
+}
+
+.indicator.valid {
+    background: #0f0;
+    box-shadow: 0 0 5px #0f0,
+        0 0 10px #0f0,
+        0 0 20px #0f0,
+        0 0 40px #0f0;
+
+}
+
+.indicator.invalid {
+    background: #f00;
+    box-shadow: 0 0 5px #f00,
+        0 0 10px #f00,
+        0 0 20px #f00,
+        0 0 40px #f00;
+
+}
+
+form .btn {
+    margin: 10px;
+    padding: .8rem 1.5rem;
+    border-radius: 3px;
+    background-color: #1c7396;
+    text-align: center;
+    color: white;
+    width: fit-content;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border: none;
+    transition: .3s;
+}
+
+form .btn:hover {
+    background-color: #1A5F7A;
+
+
+
+}
+
+form .contact-btn a {
+    color: white;
+}
+
+button:disabled {
+    cursor: not-allowed;
+}
+
+button:disabled:hover {
+    cursor: not-allowed;
+    background-color: red;
+
+}
+
+button:enabled {
+    cursor: pointer;
+}
+
+form input,
+textarea {
+    display: block;
+    margin: 10px;
+    padding: .4rem 1rem;
+    width: 100%;
+    border-radius: 4px;
+    border: 1px solid rgb(116, 111, 111);
+    box-shadow: 1PX 2PX 3PX rgb(190, 186, 186);
+    color: black;
+    font-weight: bold;
+    outline: none;
+}
+
+/* !!!!!!!!!!!!Footer section !!!!!!!!!!!!!!!!!! */
+
+footer {
+    width: 100%;
+    background-color: #132c36;
+    padding: 1rem 2rem;
+    text-align: center;
+
+}
+
+
+
+
+
+
+.social-group {
+    padding: 10px 20px;
+}
+
+.social-group a {
+    color: white;
+    padding: 5px;
+    transition: .3s all;
+}
+
+.social-group a:hover {
+    color: rgb(0, 140, 255);
+    transition: .3s all;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+.title {
+    color: white;
+}
+
+.credit {
+    color: gray;
+}
+
+
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!Media query!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+
+@media screen and (max-width:837px) {
+    #Portfolio {
+
+        padding: 7% 7% 7% 5%;
+
+    }
+
+
+    .cards .card img {
+        width: 40rem !important;
+        margin-top: 10px;
+
+    }
+
+}
+
+@media screen and (max-width:800px) {
+    header nav ul {
+        padding-right: 0rem;
+    }
+
+    header nav {
+        padding: 0rem;
+        width: 100%;
+        margin: 0;
+
+    }
+
+    main .site-head {
+        padding: 0rem 0rem;
+        padding-top: 6rem;
+    }
+
+    .site-head h1 {
+        font-size: 2.5rem;
+        padding: 1rem 1.5rem;
+
+    }
+
+    .site-head h3 {
+        padding: 1rem 2rem;
+        line-height: 1.5;
+        margin-bottom: 3rem;
+
+    }
+
+    form {
+        padding: 1rem 1rem;
+        width: 100%;
+        margin-left: -20%;
+    }
+
+    form .btn {
+        padding: .7rem 1.4rem;
+        font-size: 1.5rem;
+        font-weight: 600;
+        transition: 0.3s;
+    }
+
+    form .btn:hover {
+        background-color: #1A5F7A
+    }
+
+    #contact_us {
+
+        gap: 7rem;
+    }
+}
+
+@media screen and (max-width:665px) {
+
+    .site-head h1 {
+        font-size: 2.3rem;
+        padding: 0.1rem 2rem;
+    }
+
+    .site-head h3 {
+        font-size: 1.3rem;
+        margin-bottom: 1.2rem;
+    }
+
+    .site-head a {
+        font-size: 1.1rem;
+        text-transform: uppercase;
+    }
+
+    .site-head a:hover {
+        background-color: rgb(17, 100, 31);
+        color: white;
+    }
+
+    #about .main-about img {
+        height: 150px;
+    }
+
+    #contact_us {
+
+        display: flex;
+        flex-wrap: wrap;
+        margin: auto;
+        gap: 1rem;
+
+    }
+
+    form {
+        padding: 1rem 0;
+        width: 100%;
+        margin: auto;
+
+    }
+
+    form input,
+    #message {
+        width: 100%;
+        margin: 8px auto;
+    }
+
+    form .btn {
+        padding: .8rem 1.5rem;
+        font-size: 1.5rem;
+        font-weight: 600;
+        transition: 0.3s;
+    }
+
+    form .btn:hover {
+        background-color: #1A5F7A
+    }
+}
+
+
+@media screen and (max-width:555px) {
+
+
+
+    nav .logo img {
+        height: 40px;
+    }
+
+    #about .main-about img {
+        height: 130px;
+        margin-bottom: 18px;
+        margin-top: -0.5%;
+        margin-left: 70%;
+
+
+    }
+
+    .main-about h4 {
+        margin: 1rem auto;
+        line-height: 1.2;
+    }
+
+    .main-about .myprofile h3 {
+        font-size: 1.6rem;
+        padding-top: 8%;
+    }
+
+    .myprofile h4 a {
+        color: rgb(43, 153, 135);
+    }
+
+
+
+    #Portfolio {
+        padding: 7% 7% 7% 5%;
+
+    }
+
+
+    /* .cards .card img {
+        width: 40rem !important;
+        margin-top: 10px;
+
+    } */
+
+
+    .big-text h1 {
+        font-size: 1.3rem;
+
+    }
+
+    #Portfolio .cards {
+        padding: 6% 0 6% 0;
+
+    }
+
+    .cards .card img {
+        width: 380;
+        height: 150px;
+        margin-right: 6px;
+    }
+
+
+    .mobile {
+        display: block;
+    }
+
+    .menu-toggle {
+        font-size: 1.5rem;
+    }
+
+    nav ul {
+        display: block;
+        position: absolute;
+        top: 10vh;
+        background-color: azure;
+        width: 100%;
+        font-weight: bolder;
+        padding-bottom: 1rem;
+        text-align: center;
+        z-index: 10;
+        display: none;
+    }
+
+    .menu-displayed {
+        display: block;
+    }
+
+    nav .logo {
+        padding-left: 1rem;
+    }
+
+    .myskills {
+        margin-top: 160px;
+    }
+
+    .main-about .myskills h3 {
+        margin: 3px 0px;
+        padding: 7px 15px;
+
+
+    }
+
+    .main-about .myprofile h4 {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width:520px) {
+
+    .site-head h1 {
+        font-size: 2.1rem;
+    }
+
+    .site-head h3 {
+        font-size: 1.1rem;
+    }
+
+    .site-head a {
+        font-size: 1rem;
+        padding: .7rem 1.5rem;
+
+    }
+
+    .site-head a:hover {
+        background-color: rgb(17, 100, 31);
+        color: white;
+    }
+
+
+
+    #contact_us {
+        padding: 1rem;
+    }
+
+    #contact_us .mytext {
+        padding: 1.8rem;
+    }
+
+    .mytext h1 {
+        font-size: 1.3rem;
+    }
+
+    .mytext h3 {
+        font-size: 1rem;
+        padding-top: 1.7rem;
+    }
+
+
+    footer .social span {
+        font-size: .8rem;
+        padding: 1rem;
+    }
+
+}
+
+
+@media screen and (max-width:400px) {
+    nav .logo img {
+        height: 25px;
+    }
+
+    .myskills h2 {
+        font-size: 1.4rem;
+    }
+
+    .myskills h3 {
+        font-size: 1.3rem;
+    }
+
+    .main-about .myprofile h3 {
+
+        font-size: 1.3rem;
+        padding-top: 30%;
+    }
+
+    .main-about .myprofile h4 {
+        font-size: 1rem;
+    }
+
+    #about .main-about img {
+        height: 100px;
+
+
+    }
+
+
+    .site-head h1 {
+        font-size: 2rem;
+    }
+
+    .site-head h3 {
+        font-size: 1rem;
+    }
+
+    .site-head a {
+        font-size: .9rem;
+
+    }
+
+    .site-head a:hover {
+        background-color: rgb(17, 100, 31);
+        color: white;
+    }
+
+    footer .social span {
+        font-size: .7rem;
+    }
+
+
+}
