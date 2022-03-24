@@ -60,20 +60,12 @@ const displayMessage = async () => {
          <div class= "message" data-id = '${message}'>
 
          <div class="container">
-         <div>
+        
              <p class="bold" >Date: ${message.date}</p>
-         </div>
-         <div>
-
-
-         <div>
             <p class="bold">Names: ${message.name}</p>
-        </div>
-         <div>
             <p class="bold">Email: ${message.email}</p>
         </div>
-         <p class="bold">Message: ${message.message}</p>
-         </div>
+         
 
         </div>`;
           // userMessage.insertBefore(tr, userMessage.firstChild)

@@ -87,19 +87,20 @@ header ul li a{
 aside{
     background-color: gray;
     margin: 0em 0em 0em 10em;
-    width: 600px;
+    width: 800px;
     border-radius: 40px;
     padding:1em;
 }
 
 aside .container{
+    display: grid;
     border-bottom: 2px solid black;
 
 }
 aside div{
    background-color:#534F4F;
    border-radius: 10px;
-   padding-bottom: 1em;
+   padding-bottom: 0.5em;
  
 
 }
@@ -116,4 +117,10 @@ aside .bold{
 .fa:hover{
     background-color: #534F4F;
     color:#C6971E;
+}
+p{
+    font-size: 1em;
+}
+#message1{
+    margin-left: 5em;
 }

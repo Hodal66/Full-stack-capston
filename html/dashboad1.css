@@ -223,3 +223,10 @@ YYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY*/
         font-size: 1em;
     }
 }
+
+p{
+    font-size: 1em;
+}
+#message1{
+    margin-left: 5em;
+}
