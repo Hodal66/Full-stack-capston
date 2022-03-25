@@ -41,6 +41,7 @@ const loggedUser = () => {
   
   // const url = "http://localhost:9000/api/v1/contacts";
   const url = "http://localhost:9000/api/v1/contacts"
+  {/* <button> <img src="../img/Delete.png" alt="Delete" class="delete" data-id = '${message._id}'> </button> */}
   
   const displayMessage = async () => {
     fetch(url)
@@ -69,10 +70,10 @@ const loggedUser = () => {
                <p class="bold" >Email</p>
                <p>${message.email}</p>
            </div>
-       
-           <button> <img src="../img/Delete.png" alt="Delete" class="delete" data-id = '${message._id}'> </button> 
+           <div>
+               <p><a href="#"><i class="fa fa-trash-o" style="font-size:24px"></i></a></p>
                
-          
+           </div>
           </div>
           <div class="message_user">
           ${message.message}
@@ -98,32 +99,31 @@ const loggedUser = () => {
       const { target } = e;
   
       if (target.matches(".delete")) {
-        console.log("Delete Clicked")
         let messageId = e.target.getAttribute("data-id");
         console.log(messageId);
   
         const token = localStorage.getItem("token");
   
-        // fetch(`${url}/${messageId}`, {
-        //   method: "DELETE",
-        //   headers: {
-        //     "Content-type": "application/json",
-        //     Authorization: "Bearer " + token,
-        //   }
-        // })
-        //   .then((res) => {
-        //     console.log(res.json());
-        //   })
-        //   .then((data) => {
-        //     Swal.fire({
-        //       text: "Successfully deleted!",
-        //       icone: "success",
-        //     });
+        fetch(`${url}/${messageId}`, {
+          method: "DELETE",
+          headers: {
+            "Content-type": "application/json",
+            Authorization: "Bearer " + token,
+          }
+        })
+          .then((res) => {
+            console.log(res.json());
+          })
+          .then((data) => {
+            Swal.fire({
+              text: "Successfully deleted!",
+              icone: "success",
+            });
   
-          //   window.setTimeout(() => {
-          //     location.reload();
-          //   }, 2000);
-          // });
+            window.setTimeout(() => {
+              location.reload();
+            }, 2000);
+          });
       }
     });
   } catch (error) {
