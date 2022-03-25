@@ -1,3 +1,10 @@
+:root{
+    --color1:#495371;
+    --color2:#F5F5F5;
+    --laptop : 992px;
+    --tablet : 768px;
+    --mobile : 576px;
+    }
 *{
     margin: 0px;
     padding:0px;
@@ -5,7 +12,7 @@
 }
 
 body{
-    background-color:#927E91;
+    background-color:#495371;
     display: flex;
 }
 html, body{
@@ -43,7 +50,7 @@ header .menu{
 }
 
 header ul li{
-    background-color: #534F4F;
+    background-color: #495371;
     border: 1px solid #676764;
     padding: 1em;
     list-style: none;
@@ -54,7 +61,7 @@ header ul li:hover,a:hover{
     color:rgba(0,0,0,0.8);
 }
 .article:hover{
-    background-color:#927E91;
+    background-color:#495371;
     color:white;
 }
  .articles {
@@ -76,10 +83,10 @@ header ul li a{
 }
 #message{
     background-color: #C4C4C4;
-    color: #534F4F;
+    color: #495371;
 }
 #message:hover{
-    background-color: #534F4F;
+    background-color: #495371;
     color: #C4C4C4;
 }
 /* Thisis aside******************** */
@@ -98,7 +105,7 @@ aside .container{
     grid-template-columns: 25% 32.5% 32.5% 10%;
 }
 aside div{
-   background-color:#534F4F;
+   background-color:#495371;
    border-radius: 10px;
    padding-bottom: 1em;
  
@@ -118,9 +125,9 @@ aside .message_user{
     font-size: 2em;
     margin-right: 4em;
     color: #C4C4C4;
-    background-color: #534F4F;
+    background-color: #495371;
 }
 .fa:hover{
-    background-color: #534F4F;
+    background-color: #495371;
     color:#C6971E;
 }

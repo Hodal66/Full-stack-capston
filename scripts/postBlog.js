@@ -14,6 +14,7 @@ const url = "";
 //   console.log(titleValue.value);
 
   const token = localStorage.getItem("token")
+  //const url = "http://localhost:9000/api/v1/contacts"
 
   fetch("https://api-my-brand.herokuapp.com/api/v1/articles", {
     method: "POST"
@@ -43,35 +44,6 @@ const url = "";
               </div>
           </div>
      `;
-     `<div class="container">
-            <p class="left" '${article.title}'>add title</p><br>
-            <div class="title">
-                
-                <input type="text" name="title" id="title" placeholder="Add Title Here" '${article.title}' >
-            </div>
-
-            <p class="left" '${article.cover}' >add picture</p><br>
-            <div class="picture">
-                
-                <input type="file" name="file" id="file">
-
-            </div>
-
-            <p class="left">add article</p><br>
-            <div class="add_article">
-               
-                <textarea class="textarea" name="area" id="area" cols="80" rows="15">
-                    
-                </textarea>
-                <div class="create_btn">
-                    <button><a href="#">Create</a></button>
-                </div>
-            </div>
-
-            
-        </div>`
-
-
 
           
         });

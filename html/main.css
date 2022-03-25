@@ -1,12 +1,6 @@
 :root{
---color1:#000;
---color2:white;
---color3:green;
---color4:#927E91;
---color5:#403E3E;
---color7:#C4C4C4;
---color8:#3239D0;
---desktop : 1200px;
+--color1:#495371;
+--color2:#F5F5F5;
 --laptop : 992px;
 --tablet : 768px;
 --mobile : 576px;
@@ -33,7 +27,7 @@ html, body{
 header #Home{
     font-size: 3vw;
     padding: 0.3em 3em ;
-    color:white;
+    color:#F5F5F5;
 }
 header h1 span{
     color:steelblue;
@@ -45,7 +39,7 @@ header nav{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    background-color:green;
+    background-color:#495371;
 }
 header nav ul{
 padding: 0em 6em;
@@ -64,29 +58,32 @@ header nav ul li{
 }
 
 header nav ul li a{
-    color : white;
+    color : #F5F5F5;
     font-size: 1em;
     text-decoration: none;
 }
 header nav ul li a:hover{
-     color: #403E3E;
+     color: #F5F5F5;
 }
 .btn{
-    background-color: #403E3E;
-    color: #fff;
+    background-color: #F5F5F5;
+    color: #495371;
     margin-left: 1em;
     padding: 0.5em 1em;
     border-radius: 2em;
     transition: all 2s;
-    border: 1px solid white;
+    border: 1px solid #F5F5F5;
 }
 .btn a{
-    color:white;
+    color:#495371;
     text-decoration: none;
     font-size: 1em;
 }
+.about_btn{
+    color:#495371 ;
+}
 .btn a:hover{
-    color: #403E3E;
+    color: #F5F5F5;
 }
 .login a{
     text-align: center;
@@ -95,8 +92,7 @@ header nav ul li a:hover{
 }
 .btn:hover{
     text-align: center;
-    color: #403E3E;
-    background-color: green;
+    background-color: #495371;
 }
 
 header .profile{
@@ -119,7 +115,7 @@ header .profile .content h1,p{
     font-size: 1.5em;
 }
 header .profile .content h1,p{
-    color: white;
+    color: #F5F5F5;
 }
 
 .start{
@@ -127,22 +123,23 @@ header .profile .content h1,p{
     margin: 1em;
 }
 .start a{
-    color:white;
+    color:#495371;
     text-decoration: none;
     font-size: 1.5em;
     
 }
 
-/*THIS IS NOW A SECTION on about ********************************************/
+/*THIS IS NOW A SECTION on about********************************************/
 
  
 .headerhead{
-    border: 2px solid #C4C4C4;
-    border-left: none;
-    border-right:none;
+    border-bottom:10px solid #C6971E;
+    width: 200px;
+    margin:3em, 0em;
+    
     align-items: center;
     text-align: center;
-    color:#403E3E;
+    color:#495371;
     padding: 1em;
     
 }
@@ -167,8 +164,8 @@ section .about img{
     padding: 1em 6em 0em 0em;
     
    
-    color: white;
-    background-color: #403E3E;
+    color: #F5F5F5;
+    background-color: #495371;
     border-radius: 40px;
     width: 380px;
     height: 450px;
@@ -185,7 +182,7 @@ section .about img{
     font-family:Verdana, Geneva, Tahoma, sans-serif; 
 }
 .pragraph_size_2em{
-    color: #C4C4C4;
+    color: #495371;
     font-size: 1.3em;
     text-align: left;
    justify-content: center;
@@ -229,7 +226,7 @@ section .services img{
 }
 .font-2{
     width:240px ;
-    color: #403E3E;
+    color: #495371;
     font-size: 1em;
 }
 section .services h1{
@@ -237,8 +234,8 @@ section .services h1{
     font-size: 1.3em;
 }
 .offer{
-    background-color: green;
-    color: white;
+    background-color: #495371;
+    color: #F5F5F5;
     width: 240px;
     line-height: 1em;
     margin: 0.5em 0em;
@@ -250,24 +247,25 @@ section .services h1{
 /* Let Now Move On Skills************************************************************* */
 
 section .skills{
+    margin-bottom: 3em;
     display: grid;
     grid-template-columns: repeat(4,1fr);
     justify-content: center;
-    background-color: green;
+    background-color: #495371;
     padding: 1em 1em 1em 6em;
     
 }
 section .skills div{
-    border: 1px solid rgba(0, 250, 0,0.1%);
+    border: 1px solid #495371;
     
     border-radius: 20px;
-    border: 1px solid rgba(0, 0, 0,5%);
+    border: 1px solid #535b72;
     margin: 1em 0em;
     width: 150px;
     height: 200px;
     border-radius: 1em;
     padding: 0.5em;
-    box-shadow: 0px 4px 40px 5px hsl(0, 0%, 70%);
+    box-shadow: 5px 5px 30px 1px #495371;
 } 
 
 section .skills div h1{
@@ -282,7 +280,7 @@ section .skills div h1{
 
 }
 section .skills div p{
-    color: white;
+    color: #F5F5F5;
     font-size: 1em;
     padding:0.5em;
 
@@ -297,29 +295,10 @@ section .skills div span{
 
 /* THIS PART IS FOR Contact **************** */
 
-section .contact{
-padding: 2em;
-background-color:red;
-}
-/* section .address .first{
-    border-radius: 1em 1em 0em 0em;
-}
-section .address .last{
-    border-radius: 0em 0em 1em 1em;
-} */
-
-/* section .address div{
-   
-    padding: 2.5em;
-    width: 550px;
-    border: 6px solid #C6971E;
-}
-section .address div p,a{
-    font-size: 36px;
-    color: white;
-} */
-
 section aside{
+    margin-top: 3em;
+    background-color: #495371;
+    border-radius: 10px;
     padding: 2em 1em 2em 3em;
     margin: 0em 20em;
     width: 50%;
@@ -328,36 +307,48 @@ section aside{
 }
 section aside:hover{
     
-    background-color: #636060;
+    background-color: #495371;
     border-radius: 10px;
 }
-
+::placeholder{
+    color: #495371;;
+}
 section aside input[type="text"], input[type="email"]{
-    border: 1px solid green;
+    border: 1px solid #495371;
+    border: none;
     padding: 0.5em;
     border-radius: 0.5em;
     font-size: 1.5em;
     width:420px;
-    border-color: white;
+    border-color: #F5F5F5;
     margin-top: 1em;
+    color: #495371;
+}
+section aside input[type="text"]::placeholder, input[type="email"]::placeholder{
+    color:#495371;
+    opacity: 0.6;
 }
 .btn:hover{
-    color: #403E3E;
-    background-color: green;
+    color: #F5F5F5;
+    background-color: #495371;
 }
 section aside input[type="submit"]{
-    background-color: hsl(0, 0%, 77%);
+    background-color: #f5f5f5;
     margin-top: 1em;
-    color: #636060;;
+    color: #495371;
+    border: transparent;
     padding: 1em;
     font-size: 1em;
     width:420px;
     border-radius: 1em;
+
    
 }
 section aside input[type="submit"]:hover{
-    background-color: hsl(0, 1%, 53%);
-    color:white;
+    background-color: #495371;
+    color:#f5f5f5;
+    transition: ease-in-out 1s;
+    border: 1px solid #f5f5f5;;
 }
 section aside textarea{
     width:420px;
@@ -372,11 +363,13 @@ section aside ::placeholder{
 /* This is now Footer.....***************** */
 
  .footer{
+     margin-top: 4em;
    
-    background-color: #636060;
+    background-color: #495371;
+    border-top: 2px solid #F5F5F5;;
     
     padding: 3em;
-    color: white;
+    color: #F5F5F5;
     border-radius: 100px 0px 0px 0px;
 }
 footer nav{
@@ -416,8 +409,7 @@ footer a{
     font-size: 20px;
 }
 footer a:hover{
-    color:#C6971E;
-    background-color: #403E3E;
+    color: #F5F0F5;
 }
 
 footer .social div{
@@ -429,7 +421,7 @@ footer .copy{
 /* this is an icon */
 
  nav #icon{
-    color:white;
+    color:#F5F5F5;
     font-size: 1.7em;
     line-height: 1.7em;
     float: right;
@@ -462,7 +454,7 @@ header #Home{
     font-size: 4vw;
     align-items: center;
 
-    color:white;
+    color:#F5F5F5;
 }
 
 
@@ -479,9 +471,9 @@ header #Home{
 
  /* footer{
    margin: 1em 5em;
-    background-color: #636060;
+    background-color: #495371;
     padding: 4em;
-    color: white;
+    color: #F5F5F5;
     border-radius: 200px 0px 0px 0px;
 } */
 /*22222222222222222222222222222222222222222222222222
@@ -503,7 +495,7 @@ header #Home{
     font-size: 3vw;
     align-items: center;
 
-    color:white;
+    color:#F5F5F5;
 }
 header h1 span{
     color:steelblue;
@@ -549,8 +541,8 @@ section .about img{
 section .about .about__2{
     margin: 1em 3em 0em 0em;
    
-    color: white;
-    background-color: #403E3E;
+    color: #F5F5F5;
+    background-color: #F5F5F5;
     border-radius: 40px;
     width: 450px;
     height: 450px;
@@ -607,7 +599,7 @@ section .services img{
 }
 .font-2{
     width:250px ;
-    color: #403E3E;
+    color: #F5F5F5;
     font-size: 1.5em;
 }
 section .services h1{
@@ -616,7 +608,7 @@ section .services h1{
 }
 .offer{
     background-color: #C6971E;
-    color: #403E3E;
+    color: #F5F5F5;
     width: 250px;
     line-height: 50px;
     margin: 0.5em 0em;
@@ -667,7 +659,7 @@ section .address div{
 }
 section .address div p,a{
     font-size: 36px;
-    color: white;
+    color: #F5F5F5;
 }
 
 section aside{
@@ -680,12 +672,12 @@ section aside input[type="text"], input[type="email"]{
     border-radius: 20px;
     width:100%;
     
-    border-color: white;
+    border-color: #F5F5F5;
 }
 
 section aside input[type="submit"]{
-    background-color: #636060;
-    color: white;
+    background-color: #495371;
+    color: #F5F5F5;
     padding: 20px;
     font-size: 24px;
     width:100%;
@@ -706,9 +698,9 @@ section aside ::placeholder{
 
  /* footer{
    width: 100%;
-    background-color: #636060;
+    background-color: #495371;
     padding: 1em;
-    color: white;
+    color: #F5F5F5;
     border-radius: 200px 0px 0px 0px;
 }
 footer nav{
@@ -741,7 +733,7 @@ footer a{
 }
 footer a:hover{
     color:#C6971E;
-    background-color: #403E3E;
+    background-color: #F5F5F5;
 }
 
 footer .social div{
@@ -753,7 +745,7 @@ footer .copy{
 /* this is an icon */
 
  /* nav #icon{
-    color:white;
+    color:#F5F5F5;
     font-size: 30px;
     line-height: 30px;
     float: right;
@@ -783,7 +775,7 @@ header #Home{
     font-size: 2vw;
     align-items: center;
 
-    color:white;
+    color:#F5F5F5;
 }
 header h1 span{
     color:steelblue;
@@ -812,31 +804,31 @@ header nav ul li{
 }
 
 header nav ul li a{
-    color : white;
+    color : #F5F5F5;
     font-size: 0.5em;
     text-decoration: none;
 }
 header nav ul li a:hover{
-     color: #403E3E;
+     color: #F5F5F5;
 }
 .btn{
-    background-color: #403E3E;
+    background-color: #F5F5F5;
     color: #fff;
     padding: 0.5em 2em;
     border-radius: 3em;
     transition: all 2s;
-    border: 1px solid white;
+    border: 1px solid #F5F5F5;
 }
 .btn a{
-    color:white;
+    color:#F5F5F5;
     text-decoration: none;
     font-size: 2em;
 }
 .btn a:hover{
-    color: #403E3E;
+    color: #F5F5F5;
 }
 .btn:hover{
-    color: #403E3E;
+    color: #F5F5F5;
     background-color: #fff;
 }
 
@@ -860,7 +852,7 @@ header .profile .content h1,p{
     font-size: 1em;
 }
 header .profile .content h1,p{
-    color: white;
+    color: #F5F5F5;
 }
 
 .start{
@@ -868,7 +860,7 @@ header .profile .content h1,p{
     margin: 0em 3em;
 }
 .start a{
-    color:white;
+    color:#F5F5F5;
     text-decoration: none;
     font-size: 1em;
 } */
@@ -883,7 +875,7 @@ header .profile .content h1,p{
     border-right:none;
     align-items: center;
     text-align: center;
-    color:#403E3E;
+    color:#F5F5F5;
     
     padding: 1em;
     
@@ -910,8 +902,8 @@ section .about img{
 section .about .about__2{
     margin: 1em 3em 0em 0em;
     height : 300px;
-    color: white;
-    background-color: #403E3E;
+    color: #F5F5F5;
+    background-color: #F5F5F5;
     border-radius: 40px;
     width: 350px;
     margin:1em ;
@@ -971,7 +963,7 @@ section .services img{
 }
 .font-2{
     width:350px ;
-    color: #403E3E;
+    color: #F5F5F5;
     font-size: 1.5em;
 }
 section .services h1{
@@ -980,7 +972,7 @@ section .services h1{
 }
 .offer{
     background-color: #C6971E;
-    color: #403E3E;
+    color: #F5F5F5;
     width: 350px;
     line-height: 50px;
     margin: 0.5em 0em;
@@ -1072,7 +1064,7 @@ section .address div{
 }
 section .address div p,a{
     font-size: 36px;
-    color: white;
+    color: #F5F5F5;
 }
 
 section aside{
@@ -1084,12 +1076,12 @@ section aside input[type="text"], input[type="email"]{
     border-radius: 20px;
     width:420px;
     margin: 1em;
-    border-color: white;
+    border-color: #F5F5F5;
 }
 
 section aside input[type="submit"]{
-    background-color: #636060;
-    color: white;
+    background-color: #495371;
+    color: #F5F5F5;
     padding: 20px;
     font-size: 24px;
     width:420px;
@@ -1110,9 +1102,9 @@ section aside ::placeholder{
 /* 
  footer{
    
-    background-color: #636060;
+    background-color: #495371;
     padding: 6em;
-    color: white;
+    color: #F5F5F5;
     border-radius: 200px 0px 0px 0px;
 }
 footer nav{
@@ -1144,7 +1136,7 @@ footer a{
 }
 footer a:hover{
     color:#C6971E;
-    background-color: #403E3E;
+    background-color: #F5F5F5;
 }
 
 footer .social div{
@@ -1156,7 +1148,7 @@ footer .copy{
 /* this is an icon */
 /* 
  nav #icon{
-    color:white;
+    color:#F5F5F5;
     font-size: 30px;
     line-height: 30px;
     float: right;

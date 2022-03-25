@@ -1,3 +1,11 @@
+:root{
+    --color1:#495371;
+    --color2:#F5F5F5;
+    --laptop : 992px;
+    --tablet : 768px;
+    --mobile : 576px;
+    }
+
 *{
     margin: 0px;
     padding:0px;
@@ -5,7 +13,7 @@
 }
 
 body{
-    background-color:#927E91;
+    background-color:#C4C4C4;
     display: flex;
 }
 html, body{
@@ -43,7 +51,7 @@ header .menu{
 }
 
 header ul li{
-    background-color: #534F4F;
+    background-color: #495371;
     border: 1px solid #676764;
     padding: 1em;
     list-style: none;
@@ -54,7 +62,7 @@ header ul li:hover,a:hover{
     color:rgba(0,0,0,0.8);
 }
 .article:hover{
-    background-color:#927E91;
+    background-color:#495371;
     color:white;
 }
  .articles {
@@ -76,27 +84,27 @@ header ul li a{
 }
 #overview{
     background-color: #C4C4C4;
-    color: #534F4F;
+    color: #495371;
 }
 #overview:hover{
-    background-color: #534F4F;
+    background-color: #495371;
     color: #C4C4C4;
 }
 #my_alticle{
     background-color: #C4C4C4;
-    color: #534F4F;
+    color: #495371;
 }
 #my_alticle:hover{
-    background-color: #534F4F;
+    background-color: #495371;
     color: #C4C4C4;
 }
 /* Thisis aside******************** */
 
 aside{
-    background-color: gray;
+    background-color: #C4C4C4;
     margin: 0em 0em 0em 18em;
     width: 700px;
-    border-radius: 40px;
+    border-radius: 0px;
     padding:1em;
 }
 
@@ -105,19 +113,18 @@ aside .container{
     display: grid;
     grid-template-columns:auto auto auto auto auto;
     grid-gap:3em;
-
-display: flex;
 }
 
 aside div{
-   background-color:#534F4F;
+   background-color:#495371;
    border-radius: 10px;
    padding-bottom: 0.2em;
+   text-align: center;
  
 
 }
 aside .bold{
-    font-size: 20px;
+    font-size: 10px;
     font-weight: 700;
 }
 .fa{
@@ -127,4 +134,10 @@ aside .bold{
     cursor: pointer;
     color:green;
     margin-top: 1.5em;
+}
+h1{
+    font-size: 9px;
+}
+p{
+    font-size: 8px;
 }

@@ -20,7 +20,7 @@
                     <div class="articles">
                         <ul>
                             <li id="overview"><a href="Overview.html">Overview</a></li>
-                            <li><a href="dashboard.html">Update</a></li>
+                            <li><a href="dashboard.html">Create New</a></li>
                         </ul>
                     </div>
                     
@@ -30,34 +30,38 @@
         </div>
     </header>
     <aside>
-        <div class="container">
-            <p class="left">add title</p><br>
+         <div class="container">
+            
             <div class="title">
-                
-                <input type="text" name="title" id="title" placeholder="Add Title Here">
+                <p class="left">add title</p><br>
+                <input type="text" name="title" id="title-name" placeholder="Add Title Here">
             </div>
-
-            <p class="left">add picture</p><br>
-            <div class="picture">
-                
-                <input type="file" name="file" id="file">
-
-            </div>
-
-            <p class="left">add article</p><br>
-            <div class="add_article">
-               
-                <textarea class="textarea" name="area" id="area" cols="80" rows="15">
-                    
-                </textarea>
-                <div class="create_btn">
-                    <button><a href="#">Create</a></button>
-                </div>
+            <div class="title">
+                <p class="left">add author</p><br>
+                <input type="text" name="title" id="author" placeholder="Add Author">
             </div>
 
             
-        </div>
+            <div class="picture">
+                <p class="left">add picture</p><br>
+                <input type="file" name="file" id="file" id="imaging">
+
+            </div>
+
+            
+            <div class="add_article">
+                <p class="left">add article</p><br>
+                <textarea class="textarea" name="area" id="area" cols="80" rows="15" id="body-message">
+                    
+                </textarea>
+                <div class="create_btn">
+                    <button type="button" onclick="check()">Create Ariticle</button>
+                </div>
+            </div> 
+
+            
+       
     </aside>
 </body>
-<script src="../scripts/createBlog.js"></script>
+<script src="../scripts/create.article.js"></script>
 </html>

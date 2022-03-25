@@ -1,0 +1,1 @@
+<button onclick="deleteMessage(${message._id})"><i class="fa fa-trash-o " id="delete"></i></button>

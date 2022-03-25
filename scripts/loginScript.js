@@ -44,8 +44,8 @@ function validate() {
 }
 validate();
 
-// const url = "http://localhost:9000/api/v1/users/login";
-const url = "http://localhost:9000/api/v1/users/login"
+const url = "http://localhost:9000/api/v1/users/login";
+// const url = "ç"
 
 const email = document.getElementById("email");
 const password = document.getElementById("password");

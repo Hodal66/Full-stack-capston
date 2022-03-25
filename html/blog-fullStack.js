@@ -59,7 +59,7 @@ const displayArticle = async () =>{
   fetch(url)
     .then((response) => response.json())
     .then((data) => {
-      console.log(data);
+      console.log("kkkl",data);
 
       try {     
       let articles = data.blogs;
@@ -69,8 +69,8 @@ const displayArticle = async () =>{
             <div class="articles">
                 <div class="article" data-id = '${article._id}'>
                     <h3>${article.title}</h3>
-                   <p>${article.body}</p>
                     <em> <h4>Written by ${article.author}</h4> </em> 
+                    <p>${article.content}</p>
                 <div id="submit-comment"></div>
                 <a class="logged-in btn btn-read" href="#p" data-ref="${article}">read more</a>
                 </div>

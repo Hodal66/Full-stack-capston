@@ -1,3 +1,12 @@
+
+:root{
+    --color1:#495371;
+    --color2:#F5F5F5;
+    --laptop : 992px;
+    --tablet : 768px;
+    --mobile : 576px;
+    }
+
 * {
     margin: 0;
     padding: 0;
@@ -5,7 +14,7 @@
 }
 
 body {
-    background-color: #888888;
+    background-color: #495371;
     font-family: 'Robot', sans-serif;
 }
 
@@ -13,12 +22,12 @@ body {
     width: 30%;
     /* height: 550px; */
     margin: auto;
-    background-color: rgb(142, 140, 140);
+    background-color: #F5F0F5;
     border-radius: 10px;
     margin-top: 10px;
     padding-bottom: 10px;
     border: 1px solid rgb(233, 227, 227);
-    box-shadow: 5px 7px 5px 0 #c5c3c3;
+    box-shadow: 5px 7px 5px 0 #F5F5F5;
 }
 
 .login-form {
@@ -26,10 +35,10 @@ body {
     height: 380px;
     margin: 20px auto;
     margin-top: 4rem !important;
-    background-color: white;
+    background-color: #F5F5F5;
     border-radius: 3px;
     border: 1px solid rgb(233, 227, 227);
-    box-shadow: 5px 7px 5px 0 #c5c3c3;
+    box-shadow: 5px 5px 10px 0 #c5c3c3;
 
 
 }
@@ -43,7 +52,7 @@ h1 {
 h4 {
     text-align: center;
     font-size: .9rem;
-    color: rgb(53, 48, 48);
+    color: #495371;
     margin-top: 8px;
 }
 
@@ -66,7 +75,7 @@ form input {
     width: 100%;
     padding: 7px;
     border: none;
-    border: 1px solid gray;
+    border: 1px solid #495371;
     border-radius: 6px;
     outline: none;
     background-color: rgb(245, 245, 245);
@@ -75,7 +84,7 @@ form input {
 form input::placeholder {
     text-transform: capitalize;
     font-family: "Lato";
-    color: rgb(17, 26, 28);
+    color: #646874;
     font-weight: bolder;
 }
 
@@ -86,7 +95,7 @@ button {
     margin-top: 20px;
     border: none;
     background-color: rgb(214, 13, 13);
-    color: white;
+    color: #F5F5F5;
     font-size: 1.2rem;
     cursor: not-allowed;
 }
@@ -97,7 +106,7 @@ button:disabled {
 }
 
 button:enabled {
-    background-color: #1d2724;
+    background-color: #495371;
     cursor: pointer;
 }
 
@@ -175,9 +184,10 @@ p {
 }
 
 .para-2 a {
-    color: green;
+    color:  #8c8e96;
     border: none;
     font-size: 1.1rem;
+    text-transform: lowercase;
 }
 
 .log-para {
@@ -206,6 +216,7 @@ p {
     font-weight: bolder;
     text-transform: uppercase;
     transition: .3s;
+    color: #F5F5F5;
 
 }
 
@@ -213,8 +224,9 @@ p {
     background-color: #c1d3ce
 } */
 
-.back {
+#back {
     text-transform: lowercase;
+    color: #F5F0F5;
 }
 
 

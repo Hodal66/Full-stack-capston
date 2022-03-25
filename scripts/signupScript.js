@@ -1,5 +1,9 @@
-import { resolvePathname, showNotification } from "../html/init-firebase.js";
+import {
+  resolvePathname,
+  showNotification
+} from "../html/init-firebase.js";
 console.log("huuuuuuu")
+
 function validate() {
   const name = document.getElementById("name");
   const email = document.getElementById("email");
@@ -109,13 +113,13 @@ function validate() {
 
 //const Form = document.getElementById("signup-form");
 //Form.addEventListener("change", (e) => {
-  validate();
+validate();
 //});
 
 
 //!!Register a new user
 // const url = "http://localhost:9000/api/v1/users/register";
-const url = "http://localhost:9000/api/v1/users/register";
+const url = "http://api-my-brand.herokuapp.com/api/v1/users/register";
 
 const form = document.querySelector("form");
 console.log("form", form)
@@ -143,16 +147,16 @@ form.addEventListener("submit", (e) => {
     success: (response) => {
       console.log(response);
       showNotification(
-        `Dear <b class="text-primary">${response.name}</b>, Your account has been created.`
+        `Dear <b cla                         ss="text-primary">${response.name}</b>, Your account has been created.`
       );
       console.log(response);
 
       setTimeout(() => {
         window.location = "../html/login.html";
       }, 4000);
-          
+
     },
-    
+
     error: (error) => {
       console.log(error);
       showNotification(error.message, "error");
@@ -160,6 +164,3 @@ form.addEventListener("submit", (e) => {
   });
 
 });
-
-
-

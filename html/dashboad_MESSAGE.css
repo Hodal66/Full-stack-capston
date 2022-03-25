@@ -1,3 +1,10 @@
+:root{
+    --color1:#495371;
+    --color2:#F5F5F5;
+    --laptop : 992px;
+    --tablet : 768px;
+    --mobile : 576px;
+    }
 *{
     margin: 0px;
     padding:0px;
@@ -5,7 +12,7 @@
 }
 
 body{
-    background-color:#927E91;
+    background-color:#495371;
     display: flex;
 }
 html, body{
@@ -43,7 +50,7 @@ header .menu{
 }
 
 header ul li{
-    background-color: #534F4F;
+    background-color: #495371;
     border: 1px solid #676764;
     padding: 1em;
     list-style: none;
@@ -54,7 +61,7 @@ header ul li:hover,a:hover{
     color:rgba(0,0,0,0.8);
 }
 .article:hover{
-    background-color:#927E91;
+    background-color:#495371;
     color:white;
 }
  .articles {
@@ -76,51 +83,66 @@ header ul li a{
 }
 #message{
     background-color: #C4C4C4;
-    color: #534F4F;
+    color: #495371;
 }
 #message:hover{
-    background-color: #534F4F;
+    background-color: #495371;
     color: #C4C4C4;
 }
 /* Thisis aside******************** */
 
 aside{
-    background-color: gray;
+    background-color: #C4C4C4;
     margin: 0em 0em 0em 10em;
     width: 800px;
-    border-radius: 40px;
+    border-radius: 0px;
     padding:1em;
 }
 
 aside .container{
-    display: grid;
     border-bottom: 2px solid black;
+    display: grid;
+    grid-template-columns:auto auto auto auto auto;
+    grid-gap:3em;
 
+display: flex;
 }
 aside div{
-   background-color:#534F4F;
+   background-color:#495371;
    border-radius: 10px;
    padding-bottom: 0.5em;
  
 
 }
 aside .bold{
-    font-size: 20px;
-    font-weight: 700;
+    font-size: 12px;
+    font-weight: 400;
 }
 .fa{
     font-size: 2em;
     margin-right: 2em;
     color: #C4C4C4;
-    background-color: #534F4F;
+    background-color: #495371;
 }
 .fa:hover{
-    background-color: #534F4F;
+    background-color: #495371;
     color:#C6971E;
 }
 p{
     font-size: 1em;
 }
-#message1{
-    margin-left: 5em;
+#delete{
+    margin-left: 20em;
+    background-color: red;
+}
+.messageTitle {
+    margin-bottom: 1em;
+    font-size: 1.5em;
+    color:#495371;
+    background-color: white;
+    text-align: center;
+}
+button{
+    background-color:red;
+    width: 2em;
 }
