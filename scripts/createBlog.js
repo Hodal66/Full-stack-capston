@@ -47,7 +47,9 @@ test.innerHTML="wellcome ooooooooooõ";
     });
     const getBlogs = async() => {
       let result = [];
-      fetch('https://api-my-brand.herokuapp.com/api/v1/articles', {
+      //http://localhost:5000/api/v1/contacts
+      //https://api-my-brand.herokuapp.com/api/v1/articles
+      fetch('http://localhost:5000/api/v1/contacts', {
               method: "GET",
           })
           .then(response => response.json())

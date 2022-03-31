@@ -40,7 +40,7 @@ console.log(userMessage)
 
 
 // const url = "http://localhost:9000/api/v1/contacts";
-const url = "http://localhost:9000/api/v1/contacts"
+const url = "http://localhost:5000/api/v1/contacts"
 {/* <button> <img src="../img/Delete.png" alt="Delete" class="delete" data-id = '${message._id}'> </button> */}
 
 const displayMessage = async () => {

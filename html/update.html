@@ -10,7 +10,7 @@
     <title>Overview</title>
     <link rel="icon" type="image/png" sizes="32x32" href="./looogo.jpg">
   
-    <link rel="stylesheet" href="./Overview.css">
+    <link rel="stylesheet" href="./update.css">
 </head>
 <body>
     <header>
@@ -33,33 +33,29 @@
             </ul>
         </div>
     </header>
-    <aside class="overviewContainer">
-        <!-- <div class="container">
-        
-           <div class="container">
-            <div>
-                <p class="bold" >Date</p>
-                <p>20/02/2022</p>
-            </div>
-            <div>
-                <p class="bold">Articles</p>
-                <p>Rwanda new technology</p>
-            </div>
-            <div>
-                <p class="bold">Author</p>
-                <p>by nuheto hodal</p>
-            </div>
-            <div>
-                <i class="fa fa-edit" style="font-size:24px"></i>
-                
-            </div>
-            <div>
-                <p><a href="#"><i class="fa fa-trash-o" style="font-size:24px"></i></a></p>
-            </div> 
-           </div> -->
-     
-     
+    <aside class="updateSide">
+        <form action="#" id="updateConatiner">
+        <div>
+            <label for="">Update title</label>
+            <input type="text" name="title" id="title" placeholder="hello">
+        </div>
+        <div>
+            <label for="">Update author</label>
+            <input type="text" name="author" id="author">
+        </div>
+        <div>
+            <label for="">Update Picture</label>
+           <input type="file" name="image" id="image">
+        </div>
+        <div>
+            <label for="">Update  content</label>
+           <input type="text" name="content" id="content">
+        </div>
+        <div>
+            <input type="button" value="Submit">
+        </div>
+    </form>
     </aside>
 </body>
-<script defer src="../scripts/OverView.js"></script>
+<script src="../scripts/update.js"></script>
 </html>

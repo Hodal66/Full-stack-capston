@@ -5,8 +5,11 @@
 
   const displayArticle = async ()=>{
 
-  //const url = "http://localhost:9000/api/v1/contacts"
-  fetch("http://localhost:9000/api/v1/articles", {
+    const herokuUlr="https://api-my-brand.herokuapp.com/api/v1/articles";
+    const url="http://127.0.0.1/:5000/api/v1/articles";
+
+    
+  fetch("https://api-my-brand.herokuapp.com/api/v1/articles", {
     method: "GET"
   })
     .then((res) => res.json())

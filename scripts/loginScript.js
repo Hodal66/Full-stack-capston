@@ -44,7 +44,7 @@ function validate() {
 }
 validate();
 
-const url = "http://localhost:9000/api/v1/users/login";
+const url = "https://my-brand-endpoints.herokuapp.com/api/v1/articles";
 // const url = "ç"
 
 const email = document.getElementById("email");

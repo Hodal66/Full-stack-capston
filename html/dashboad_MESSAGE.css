@@ -12,7 +12,7 @@
 }
 
 body{
-    background-color:#495371;
+    background-color: #C4C4C4;
     display: flex;
 }
 html, body{
@@ -110,7 +110,7 @@ display: flex;
 aside div{
    background-color:#495371;
    border-radius: 10px;
-   padding-bottom: 0.5em;
+   
  
 
 }
@@ -121,12 +121,13 @@ aside .bold{
 .fa{
     font-size: 2em;
     margin-right: 2em;
-    color: #C4C4C4;
+    color:red;
+    margin-right: 1em;
     background-color: #495371;
 }
 .fa:hover{
     background-color: #495371;
-    color:#C6971E;
+    color:red;
 }
 p{
     font-size: 1em;
@@ -136,13 +137,23 @@ p{
     background-color: red;
 }
 .messageTitle {
-    margin-bottom: 1em;
-    font-size: 1.5em;
+    margin-bottom: 0.5em;
+    font-size: 0.5em;
     color:#495371;
     background-color: white;
     text-align: center;
 }
 button{
-    background-color:red;
+    background-color:transparent;
+    padding: 0.5em;
     width: 2em;
+    border: none;
+    margin-right: 2em;
+}
+
+.small{
+    font-size: 0.2em;
+}
+#big{
+    font-size: 2em;
 }

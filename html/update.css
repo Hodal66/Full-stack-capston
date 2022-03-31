@@ -5,6 +5,7 @@
     --tablet : 768px;
     --mobile : 576px;
     }
+
 *{
     margin: 0px;
     padding:0px;
@@ -12,7 +13,7 @@
 }
 
 body{
-    background-color:#495371;
+    background-color:#C4C4C4;
     display: flex;
 }
 html, body{
@@ -21,7 +22,7 @@ html, body{
 }
 
 header{
-    background: url("./prooofile.png");
+    background:url("./prooofile.png");
     width: 300px;
     height: 700px;
     background-size:contain;
@@ -33,13 +34,13 @@ header{
 header h1,p{
     padding-top: 2em;
     text-align: center;
-    color:#F5F5F5;
+    color:white;
 }
 header h1 span{
     color:steelblue;
 }
 header h2{
-    color: #F5F5F5;
+    color: white;
     padding-top: 1em;
     padding-bottom: 1em;
 
@@ -50,11 +51,11 @@ header .menu{
 }
 
 header ul li{
-    background-color: hsl(225, 22%, 36%);
-    border: 1px solid hsl(225, 25%, 60%);
+    background-color: #495371;
+    border: 1px solid #676764;
     padding: 1em;
     list-style: none;
-    color: #F5F5F5;
+    color: white;
 }
 header ul li:hover,a:hover{
     background-color: #C4C4C4;
@@ -62,7 +63,7 @@ header ul li:hover,a:hover{
 }
 .article:hover{
     background-color:#495371;
-    color:#F5F5F5;
+    color:white;
 }
  .articles {
     display: none;
@@ -79,15 +80,15 @@ header ul li:hover .articles{
 
 header ul li a{
     text-decoration: none;
-    color: #F5F5F5;
+    color: white;
 }
 #overview{
-    background-color: #495371;
-    color: #C4C4C4;
-}
-#overview:hover{
     background-color: #C4C4C4;
     color: #495371;
+}
+#overview:hover{
+    background-color: #495371;
+    color: #C4C4C4;
 }
 #my_alticle{
     background-color: #C4C4C4;
@@ -101,72 +102,71 @@ header ul li a{
 
 aside{
     background-color: #C4C4C4;
-    margin: 0em 0em 0em 18.8em;
-    width: 1000px;
+    margin: 0em 0em 0em 18em;
+    width: 700px;
     border-radius: 0px;
-    padding:0.3em 2em;
+    padding:1em;
 }
 
-
-
-
-.title input{
-    color: #F5F5F5;
-    padding: 0.5em;
-    font-size: 1em;
-    margin-bottom: 0.5em;
-    border: none;
-    width: 500px;
-    background-color: #495371;
+aside .container{
+    border-bottom: 2px solid black;
+    display: grid;
+    grid-template-columns:auto auto auto auto auto;
+    grid-gap:3em;
 }
-.picture {
-    background-color: #495371;
-    padding: 3em;
-    border-radius: 20px;
-    width: 45%;
-    height: 200px;
-    margin-top:1em;
-}
-.add_article{
-    display: flex;
-    flex-direction: column;
-}
-.add_article .textarea{
-    background-color: #495371;
-    border-radius: 10px;
-    margin-top:-4.5em;
-    width: 78%;
-    color: #F5F5F5;
-    border: none;
+
+aside div{
+   background-color:#495371;
+   border-radius: 10px;
+   border-top: 1px solid gray;
+
+   padding:3em;
+   text-align: center;
+ 
 
 }
-.container .left{
-    margin-top:0em;
-   
-    font-size: 20px;
+aside .bold{
+    font-size: 10px;
     font-weight: 700;
+}
+.fa{
+    padding-top: 1em;
+    background-color:#495371 ;
+    color:red;
+}
+.fa-edit{
+    cursor: pointer;
+    color:green;
+ 
 
 }
-.create_btn button{
+h1{
+    font-size: 9px;
+}
+p{
+    font-size: 8px;
+}
+button{
     border: none;
-    margin-top: 0.5em;
-    background-color:#495371;
-    color: #C4C4C4;
-    border-radius: 20px;
-    padding: 1em;
-    width: 200px;
 }
-.create_btn button a{
-    text-decoration: none;
-    color: #C4C4C4;
-    font-size: 24;
+label{
+    color: #F5F5F5;
 }
-.create_btn button a:hover{
+input[type='button']{
+    background-color: #F5F5F5;
     color: #495371;
-    transition: all 2s;
+    font-size:large;
+    border-radius: 3em;
+    border: none;
+    padding: 0.5em;
+    width: 15em;
 }
-.create_btn button:hover{
-    background-color: #C4C4C4;
+input[type='text']{
+    background-color: #F5F5F5;
     color: #495371;
-    transition: all 2s;
+    font-size:large;
+    border-radius: 0.2em;
+    border: none;
+    padding: 0.5em;
+    width: 15em;
 }

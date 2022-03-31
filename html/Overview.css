@@ -128,16 +128,22 @@ aside .bold{
     font-weight: 700;
 }
 .fa{
+    padding-top: 1em;
+    background-color:#495371 ;
     color:red;
 }
 .fa-edit{
     cursor: pointer;
     color:green;
-    margin-top: 1.5em;
+ 
+
 }
 h1{
     font-size: 9px;
 }
 p{
     font-size: 8px;
+}
+button{
+    border: none;
 }

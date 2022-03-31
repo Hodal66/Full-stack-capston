@@ -15,8 +15,8 @@ const url = "";
 
   const token = localStorage.getItem("token")
   //const url = "http://localhost:9000/api/v1/contacts"
-
-  fetch("https://api-my-brand.herokuapp.com/api/v1/articles", {
+//https://api-my-brand.herokuapp.com/api/v1/articles
+  fetch("http://localhost:5000/api/v1/contacts", {
     method: "POST"
   })
     .then((res) => res.json())

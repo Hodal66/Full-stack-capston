@@ -5,7 +5,7 @@ const messageValue = document.getElementById("message");
 const userMessage = document.querySelector(".messages");
 
 //write comment
-const url = 'http://localhost:9000/api/v1/contacts/contactUs'
+const url = 'http://localhost:5000/api/v1/contacts/contactUs'
 form.addEventListener("submit", (e) => {
   e.preventDefault();
 
